@@ -1,0 +1,10 @@
+{
+	"name": "Playtimes",
+	"plugin-id": "Text",
+	"sid": 345060443684518,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

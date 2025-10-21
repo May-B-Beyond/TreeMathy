@@ -1,0 +1,67 @@
+{
+	"name": "Card_Upgrade",
+	"plugin-id": "Sprite",
+	"sid": 303043687333407,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "ShowButton",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 428065566830305
+		},
+		{
+			"name": "CardInt_OnUpgradeCount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 187061360961350
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 151,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.4479166666666667,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5706518,
+						"collisionPoly": {
+							"points": [
+								0.1567328918322294,
+								0.23784722222222254,
+								0.7373068432671068,
+								0.22916666666666652,
+								0.7240618101545243,
+								0.8159722222222222,
+								0.1545253863134655,
+								0.8142361111111124
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 253832962551120,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

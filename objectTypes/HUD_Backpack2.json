@@ -1,0 +1,58 @@
+{
+	"name": "HUD_Backpack2",
+	"plugin-id": "Sprite",
+	"sid": 708998985933111,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 101029318223165
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1052,
+						"height": 89,
+						"originX": 0.5,
+						"originY": 3.269662921348315,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8595870,
+						"collisionPoly": {
+							"points": [
+								0.0009505703422053232,
+								0.011235955056179775,
+								0.9990494296577946,
+								0.011235955056179775,
+								0.9990494296577946,
+								1,
+								0.0009505703422053232,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 870348419021608,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

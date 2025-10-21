@@ -1,0 +1,38 @@
+{
+	"name": "BG_Tile2",
+	"plugin-id": "TiledBg",
+	"sid": 352755545205149,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "ColorMoveToRGB",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 103796920057762
+		},
+		{
+			"name": "ColorTargeting",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 352656524913953
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 110,
+		"height": 98,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 7200638,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

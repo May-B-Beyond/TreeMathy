@@ -1,0 +1,5406 @@
+{
+	"name": "MainLayout",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "LobbyLayout"
+		},
+		{
+			"eventType": "variable",
+			"name": "Stock_Card_Crates",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 155316119740176
+		},
+		{
+			"eventType": "variable",
+			"name": "CurUpgrade",
+			"type": "string",
+			"initialValue": "",
+			"comment": "เพื่อ ให้รู้ว่าอัพเกรดได้อะไร  ( advance random )",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 305371332833512
+		},
+		{
+			"eventType": "variable",
+			"name": "CurLevelupCard",
+			"type": "string",
+			"initialValue": "",
+			"comment": "เพื่อ ให้รู้ว่าการ์ดได้เวลอะไรไหม  ( advance random )",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 797784842957890
+		},
+		{
+			"eventType": "variable",
+			"name": "UIDRandom_Card",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "UID card u holding to identify",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 779230266432733
+		},
+		{
+			"eventType": "comment",
+			"text": "Study timer เราจะใช้เทคนิคเรียนแบบ pomodoro เพื่อรับของรางวัล"
+		},
+		{
+			"eventType": "variable",
+			"name": "Stdtimer_second",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "AFK เพื่อเช็ควินาที",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 731356151044036
+		},
+		{
+			"eventType": "variable",
+			"name": "Stdtimer_minutes",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "AFK เพื่อเช็คนาที",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 939859389133926
+		},
+		{
+			"eventType": "variable",
+			"name": "PomodoroCounted",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "AFK เพื่อเช็คว่าครบกี่รอบแล้ว",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 114877832235939
+		},
+		{
+			"eventType": "variable",
+			"name": "PlaytimesSecond_ForLocalStorage",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "เพื่อเช็คว่าาเล่นนานแค่ไหนแล้ว ถ้าเกิน 1 นาที จะเซฟเหรียญแล้ว",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 478730908948122
+		},
+		{
+			"eventType": "comment",
+			"text": "Coins Show"
+		},
+		{
+			"eventType": "variable",
+			"name": "COINS_Main",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 926143593767273
+		},
+		{
+			"eventType": "variable",
+			"name": "ThousandCoins",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "เพื่อ ให้แสดงค่าได้มากขึ้น",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 350628408440693
+		},
+		{
+			"eventType": "variable",
+			"name": "MillionsCoins",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "เพื่อ ให้แสดงค่าได้มากขึ้น หลักล้าน",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 950546538716470
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayTimeSecond",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "เพื่อ ให้แสดงค่าเวลาเล่น วิ",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 847683558259534
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayTimeMinutes",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "เพื่อ ให้แสดงค่าเวลาเล่น นาที",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 207121091766199
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayTimeHour",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "เพื่อ ให้แสดงค่าเวลาเล่น ชั่วโมง",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 634549299457075
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayMatches",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "เพื่อให้แสดงค่าเล่นไปกี่รอบแล้ว",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 833958789043406
+		},
+		{
+			"eventType": "comment",
+			"text": "LevelTrees"
+		},
+		{
+			"eventType": "variable",
+			"name": "EXP_trees",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "เพื่อให้แสดงค่าประสบการณ์ของต้นไม้",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 923335222659801
+		},
+		{
+			"eventType": "variable",
+			"name": "Level_trees",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "เพื่อให้แสดงค่าประสบการณ์ของต้นไม้ ( LEVEL )",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 187848899083964
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 511235429344401
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Tree2",
+					"sid": 626797270462650,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Tree1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "TreeName_AndTiers_TXT",
+					"sid": 115761153346664,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Tree1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "TreeLevels",
+					"sid": 522626449245513,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Tree1",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Tree1",
+					"sid": 331390352395544,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "ShadowTree",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "ShadowTree",
+					"sid": 728117338036071,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Island",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Effect_Leaf2",
+					"sid": 790718505296709,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Island",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "SpinUI",
+					"sid": 836344361444884,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "SpinButton",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Upgrade_TXT",
+					"sid": 910835326068417,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "UpgradeButton",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				},
+				{
+					"id": "createProbabilityTable",
+					"objectClass": "UpgradeSuccess",
+					"sid": 422259000099214,
+					"parameters": {
+						"name": "\"Upgrade\""
+					}
+				},
+				{
+					"id": "setProbabilityTable",
+					"objectClass": "UpgradeSuccess",
+					"sid": 533349703895529,
+					"parameters": {
+						"name": "\"Upgrade\""
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "UpgradeSuccess",
+					"sid": 727658581832452,
+					"parameters": {
+						"value": "\"Rain\"",
+						"weight": "2"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "UpgradeSuccess",
+					"sid": 177709533003226,
+					"parameters": {
+						"value": "\"Wind\"",
+						"weight": "2"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "UpgradeSuccess",
+					"sid": 663957772486875,
+					"parameters": {
+						"value": "\"None\"",
+						"weight": "4"
+					}
+				},
+				{
+					"id": "createProbabilityTable",
+					"objectClass": "UpgradeSuccess",
+					"sid": 247390859353029,
+					"parameters": {
+						"name": "\"LevelUp\""
+					}
+				},
+				{
+					"id": "setProbabilityTable",
+					"objectClass": "UpgradeSuccess",
+					"sid": 335149678642177,
+					"parameters": {
+						"name": "\"LevelUp\""
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "UpgradeSuccess",
+					"sid": 426947096922629,
+					"parameters": {
+						"value": "\"Success\"",
+						"weight": "90"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "UpgradeSuccess",
+					"sid": 794749800586575,
+					"parameters": {
+						"value": "\"None\"",
+						"weight": "10"
+					}
+				},
+				{
+					"id": "createProbabilityTable",
+					"objectClass": "UpgradeSuccess",
+					"sid": 265477930869196,
+					"parameters": {
+						"name": "\"CardTypeSpawn\""
+					}
+				},
+				{
+					"id": "setProbabilityTable",
+					"objectClass": "UpgradeSuccess",
+					"sid": 830364227535075,
+					"parameters": {
+						"name": "\"CardTypeSpawn\""
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "UpgradeSuccess",
+					"sid": 672079519937720,
+					"parameters": {
+						"value": "\"Lucky\"",
+						"weight": "1"
+					}
+				},
+				{
+					"id": "addProbabilityEntry",
+					"objectClass": "UpgradeSuccess",
+					"sid": 166107484045322,
+					"parameters": {
+						"value": "\"None\"",
+						"weight": "9"
+					}
+				}
+			],
+			"sid": 358871896168316
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 391340872590728,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 215381120784554,
+					"parameters": {
+						"variable": "PlayTimeSecond",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 570834236368931
+		},
+		{
+			"eventType": "comment",
+			"text": "Playtimes"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 364972169089242,
+					"parameters": {
+						"variable": "PlayTimeSecond",
+						"comparison": 5,
+						"value": "60"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 629774433451680,
+					"parameters": {
+						"variable": "PlayTimeMinutes",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 339148690548961,
+					"parameters": {
+						"variable": "PlayTimeSecond",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 328319298921020
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 965050403394118,
+					"parameters": {
+						"variable": "PlayTimeMinutes",
+						"comparison": 5,
+						"value": "60"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 235822299541587,
+					"parameters": {
+						"variable": "PlayTimeHour",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 178551713467294,
+					"parameters": {
+						"variable": "PlayTimeMinutes",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 674944488775043
+		},
+		{
+			"eventType": "comment",
+			"text": "EXP Level tree"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 141459557512052,
+					"parameters": {
+						"variable": "EXP_trees",
+						"comparison": 5,
+						"value": "int(100+Level_trees^1.5)+Level_trees*10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 610060235910288,
+					"parameters": {
+						"variable": "Level_trees",
+						"value": "1"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 650208769085877,
+					"parameters": {
+						"variable": "EXP_trees",
+						"value": "int(100+Level_trees^1.5)"
+					}
+				}
+			],
+			"sid": 129895018560591
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 530214489143938
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 390500925113745,
+					"parameters": {
+						"variable": "ThousandCoins",
+						"value": "float(COINS_Main/1000)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 507217179147665,
+					"parameters": {
+						"variable": "MillionsCoins",
+						"value": "float(COINS_Main/1000000)"
+					}
+				}
+			],
+			"sid": 334765937525105,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 845624766281466,
+							"parameters": {
+								"variable": "Coins",
+								"comparison": 2,
+								"value": "1000"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_UI_Coin",
+							"sid": 443654402478386,
+							"parameters": {
+								"text": "\"[outline=black][linethickness=2] \"&Coins"
+							}
+						}
+					],
+					"sid": 593898773884625
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 110049926125956
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 425987200167186,
+							"parameters": {
+								"variable": "Coins",
+								"comparison": 2,
+								"value": "1000000"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_UI_Coin",
+							"sid": 740339157622975,
+							"parameters": {
+								"text": "\"[outline=black][linethickness=2] \"&ThousandCoins&\"k\""
+							}
+						}
+					],
+					"sid": 326224304044224
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 856764015863534,
+							"parameters": {
+								"variable": "Coins",
+								"comparison": 5,
+								"value": "1000000"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_UI_Coin",
+							"sid": 983921702670671,
+							"parameters": {
+								"text": "\"[outline=black][linethickness=2] \"&MillionsCoins&\"M\""
+							}
+						}
+					],
+					"sid": 554139104594888
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 199072326382281
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "Tree2",
+					"sid": 785947971185089,
+					"parameters": {
+						"effect": "\"SkendPow\"",
+						"parameter-index": "0",
+						"value": "Self.Sine.Value"
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "Tree2",
+					"sid": 693438120336402,
+					"parameters": {
+						"effect": "\"SkendPow\"",
+						"parameter-index": "3",
+						"value": "Self.Angle"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "SpinUI",
+					"sid": 558652039479048,
+					"parameters": {
+						"text": "\"[outline=Black][linethickness=2][size=32] สุ่ม !![size=24] [color=white](\"&Stock_Card_Crates&\")\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Timer_TXT",
+					"sid": 499705625250574,
+					"parameters": {
+						"text": "\"[size=36]Study timer !\r\n[size=24][color=gold]\"&PomodoroCounted&\" times : [color=white]\"&Stdtimer_minutes&\":\"&Stdtimer_second"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "CARD_INTE",
+					"sid": 652595027768744,
+					"parameters": {
+						"instance-variable": "Multiplier",
+						"value": "(1+Self.WindBuff+Self.RainBuff)+Self.Level"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "(Self.On = 0)?\"Off\":\"On\" เพื่อ เปลี่ยนจากตัวเลขให้กลายเป็นคำว่า On | Off"
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Settting_1_TXT",
+					"sid": 386654929712903,
+					"parameters": {
+						"text": "\"โหมดประสิทธิภาพ :[color=white]\"&( (Self.On = 0)?\" Off\":\" On\")\r\n"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Settting_2_TXT2",
+					"sid": 999633625946937,
+					"parameters": {
+						"text": "\"โหมดลดเอฟเฟค :[color=white]\"&((Self.On = 0)?\" Off\":\" On\")\n"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Settting_3_TXT",
+					"sid": 447615806240493,
+					"disabled": true,
+					"parameters": {
+						"text": "\"BackGround Music :[color=white]\"&( (Self.On = 0)?\" Off\":\" On\")\r\n"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "camera",
+					"sid": 685493780283544,
+					"parameters": {
+						"x": "lerp(Self.X,960,0.1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Debug_TXT_Game2",
+					"sid": 339354482124244,
+					"parameters": {
+						"text": "\"Play Times :\"&PlaytimesSecond_ForLocalStorage&\" Card counts : \"&CARD_INTE.Count"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Playtimes",
+					"sid": 694308871587343,
+					"parameters": {
+						"text": "\"[size=40]เวลาในเกม [size=20]\r\n\r\n[color=white]\"&PlayTimeHour&\" : \"&PlayTimeMinutes&\" : \"&PlayTimeSecond\r\n"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "PlayMatches",
+					"sid": 893555615906258,
+					"parameters": {
+						"text": "\"[size=40]จำนวนเกมที่เล่น[size=30]\r\n[color=white]\"&PlayMatches&\" ครั้ง\"\r\n"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TreeLevels",
+					"sid": 103312299981386,
+					"parameters": {
+						"text": "\"[outline=Black][linethickness=2][size=27] เลเวล \"&Level_trees\r\n"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TreeLevels2txt",
+					"sid": 968874761953341,
+					"parameters": {
+						"text": "\"[outline=Black][linethickness=2][size=34] เลเวลเพื่มในอีก \r\n[size=22][color=yellow]\"&EXP_trees&\"/\"&int(100+Level_trees^1.5)+Level_trees*10\r\n"
+					}
+				}
+			],
+			"sid": 164772904869508
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Request Data from array & Lock screen",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 758136847987203
+						}
+					],
+					"actions": [
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 586281376597678,
+							"parameters": {
+								"tag": "\"Question_Array\"",
+								"file": "Question.json"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 298372423543954,
+							"parameters": {
+								"tag": "\"Name_Array\"",
+								"file": "Name.json"
+							}
+						}
+					],
+					"sid": 712523417241374
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap",
+							"objectClass": "Touch",
+							"sid": 400052365541325
+						},
+						{
+							"id": "is-fullscreen",
+							"objectClass": "Browser",
+							"sid": 149219646627733
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 321107387182747,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "lock-orientation",
+							"objectClass": "Browser",
+							"sid": 286655608284046,
+							"parameters": {
+								"orientation": "landscape"
+							}
+						}
+					],
+					"sid": 263309367118994,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-loader-layout-complete",
+							"objectClass": "System",
+							"sid": 816918572508815
+						}
+					],
+					"actions": [
+						{
+							"id": "request-fullscreen",
+							"objectClass": "Browser",
+							"sid": 303569843466130,
+							"parameters": {
+								"mode": "stretch-letterbox-scale",
+								"navigation-ui": "auto"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 530985931075484,
+							"parameters": {
+								"tag": "\"Question_Array\"",
+								"file": "Question.json"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 278044480732005,
+							"parameters": {
+								"tag": "\"Name_Array\"",
+								"file": "Name.json"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "ชื่อ TAG => Array"
+						}
+					],
+					"sid": 987027175517834
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 136062131812492,
+							"parameters": {
+								"tag": "\"Question_Array\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Question",
+							"sid": 179657271893890,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 353380146358191
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 321245460025616,
+							"parameters": {
+								"tag": "\"Name_Array\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "NameArray",
+							"sid": 197720802138416,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 961576973802109
+				}
+			],
+			"sid": 600070461713064
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "gro_cursor",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "var_segments",
+					"type": "number",
+					"initialValue": "8",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": true,
+					"sid": 213241197165262
+				},
+				{
+					"eventType": "variable",
+					"name": "var_animation_duration",
+					"type": "number",
+					"initialValue": "0.15",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": true,
+					"sid": 328298652001373
+				},
+				{
+					"eventType": "variable",
+					"name": "var_max_width",
+					"type": "number",
+					"initialValue": "34",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": true,
+					"sid": 441877775895138
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-touch-end",
+							"objectClass": "Touch",
+							"sid": 174470786681156
+						}
+					],
+					"actions": [],
+					"sid": 314839096525418,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "repeat",
+									"objectClass": "System",
+									"sid": 858047917721782,
+									"parameters": {
+										"count": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 226784504555596,
+									"parameters": {
+										"object-to-create": "bac_cursor_click",
+										"layer": "\"Game\"",
+										"x": "Touch.X",
+										"y": "Touch.Y",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-size",
+									"objectClass": "bac_cursor_click",
+									"sid": 471535500661798,
+									"parameters": {
+										"width": "0",
+										"height": "8"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "bac_cursor_click",
+									"sid": 173216435170751,
+									"parameters": {
+										"angle": "Self.Angle + 360 / var_segments * loopindex"
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "bac_cursor_click",
+									"sid": 826873186342162,
+									"behaviorType": "beh_tween",
+									"parameters": {
+										"tags": "\"tag_width_grow\"",
+										"property": "offsetWidth",
+										"end-value": "var_max_width",
+										"time": "var_animation_duration",
+										"ease": "easeinsine",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no",
+										"repeat-count": "1"
+									}
+								}
+							],
+							"sid": 223145306738360
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "bac_cursor_click",
+							"sid": 686059220588881,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"tag_width_grow\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-at-angle",
+							"objectClass": "bac_cursor_click",
+							"sid": 381928228804310,
+							"parameters": {
+								"angle": "Self.Angle",
+								"distance": "Self.Width"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "bac_cursor_click",
+							"sid": 286483600509035,
+							"parameters": {
+								"angle": "Self.Angle + 180"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "bac_cursor_click",
+							"sid": 375359638744649,
+							"behaviorType": "beh_tween",
+							"parameters": {
+								"tags": "\"tag_width_shrink\"",
+								"property": "offsetWidth",
+								"end-value": "0",
+								"time": "var_animation_duration",
+								"ease": "easeoutsine",
+								"destroy-on-complete": "yes",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						}
+					],
+					"sid": 875333948869170
+				}
+			],
+			"sid": 916901437405889
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "TreeTXT",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 472516739521513
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "TreeName_AndTiers_TXT",
+							"sid": 825002230372326,
+							"parameters": {
+								"text": "\"[outline=Black][linethickness=2][size=\"&Self.Size+Self.Sine.Value&\"] \"&Self.Tree"
+							}
+						}
+					],
+					"sid": 765532353902562
+				}
+			],
+			"sid": 943848694086954
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Button & Spin",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 820748825125923,
+							"parameters": {
+								"object": "Question_Button"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 187707162156348,
+							"parameters": {
+								"layout": "StudyLesson"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 179779832027169,
+							"parameters": {
+								"variable": "PlayMatches",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 280340919186843
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 673117892991427,
+							"parameters": {
+								"object": "Button_Myisland"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Button_Myisland",
+							"sid": 347311991175271,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 473411664421536
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 850632062569746,
+							"parameters": {
+								"object": "Button_Myisland"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Button_Myisland",
+							"sid": 881369815213511,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 365422915667195
+				},
+				{
+					"eventType": "comment",
+					"text": "Open Crates"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 250822949011867,
+							"parameters": {
+								"object": "SpinButton",
+								"type": "start"
+							}
+						},
+						{
+							"id": "layer-is-visible",
+							"objectClass": "System",
+							"sid": 808254143751154,
+							"parameters": {
+								"layer": "\"setting\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 406063204131906,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 928964065467852,
+									"parameters": {
+										"variable": "Stock_Card_Crates",
+										"comparison": 4,
+										"value": "0"
+									}
+								},
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 164165483506374,
+									"parameters": {
+										"first-value": "Card_int.Count",
+										"comparison": 2,
+										"second-value": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 363932677221388,
+									"parameters": {
+										"object-to-create": "Effect_Crates_Spawn_Card",
+										"layer": "\"Game\"",
+										"x": "946",
+										"y": " 367",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "subtract-from-eventvar",
+									"objectClass": "System",
+									"sid": 412283526249454,
+									"parameters": {
+										"variable": "Stock_Card_Crates",
+										"value": "1"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 632395348807162,
+									"parameters": {
+										"audio-file": "UpgradeButton",
+										"loop": "not-looping",
+										"volume": "-2",
+										"stereo-pan": "0",
+										"tag-optional": "\"Button\""
+									}
+								},
+								{
+									"id": "set-playback-rate",
+									"objectClass": "Audio",
+									"sid": 126333183251402,
+									"parameters": {
+										"tag": "\"Button\"",
+										"playback-rate": "random(0.9,1.2)"
+									}
+								},
+								{
+									"id": "selection-vibrate",
+									"objectClass": "TapticEngineVibration",
+									"sid": 167476229790021
+								}
+							],
+							"sid": 408690111246969
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 672072656155762,
+							"parameters": {
+								"object": "SpinButton"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "SpinButton",
+							"sid": 704826519034333,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 721953252493603
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 856863371019795
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "SpinButton",
+							"sid": 613452117536232,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 918408270159995
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-out-finished",
+							"objectClass": "DemoEffect_Crates_Spawn_Card2",
+							"sid": 276772501917548,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 750519320741030,
+							"parameters": {
+								"object-to-create": "Card_int",
+								"layer": "\"Game\"",
+								"x": "DemoEffect_Crates_Spawn_Card2.X",
+								"y": "DemoEffect_Crates_Spawn_Card2.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 660312286614252,
+							"parameters": {
+								"object-to-create": "Effect_Star",
+								"layer": "\"Game\"",
+								"x": "DemoEffect_Crates_Spawn_Card2.X",
+								"y": "DemoEffect_Crates_Spawn_Card2.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 836488598468769
+				}
+			],
+			"sid": 471652547723610
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Card int",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Card_int",
+							"sid": 289226460687818
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Card_int",
+							"sid": 708951227586384,
+							"parameters": {
+								"instance-variable": "UIDRANDOM",
+								"value": "random(1000,90000)"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Card_int",
+							"sid": 643366313604641,
+							"parameters": {
+								"animation": "\"In_Animation\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "Card_int",
+							"sid": 156817823496496,
+							"parameters": {
+								"width": "1"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card_int",
+							"sid": 432352672713806,
+							"parameters": {
+								"instance-variable": "LuckyCard",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 132102246004621,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Card_int",
+									"sid": 110632072230856,
+									"parameters": {
+										"instance-variable": "Luckiness",
+										"value": "random(0,10)"
+									}
+								}
+							],
+							"sid": 411964814513956
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Card_int",
+									"sid": 591160620685096,
+									"parameters": {
+										"instance-variable": "Luckiness",
+										"comparison": 4,
+										"value": "9"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Card_int",
+									"sid": 706350690802949,
+									"parameters": {
+										"instance-variable": "LuckyCard",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 698351056443840
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 145052529635813
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Card_int",
+									"sid": 790093282063226,
+									"parameters": {
+										"instance-variable": "LuckyCard",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 976126470077289
+						}
+					]
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Card_TXT",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 893698883161807
+								},
+								{
+									"id": "is-dragging",
+									"objectClass": "Card_int",
+									"sid": 788095264254543,
+									"behaviorType": "DragDrop",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Card_TXT",
+									"sid": 353895819209809,
+									"parameters": {
+										"text": "\"(EXP : \"&Card_int.Level&\")\"&\"[size=14]\"&((Card_int.LuckyCard = 1)?\"[color=gold]+Luck\" :\"\")"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Card_TXT",
+									"sid": 182969712034085,
+									"disabled": true,
+									"parameters": {
+										"text": "\"(EXP : \"&Card_int.Level&\")\"&newline&\"[size=14]\"&Card_int.UIDRANDOM"
+									}
+								}
+							],
+							"sid": 384206872517606
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 640221509491912
+								},
+								{
+									"id": "is-dragging",
+									"objectClass": "Card_int",
+									"sid": 702152770966831,
+									"behaviorType": "DragDrop"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Card_TXT",
+									"sid": 726320478183325,
+									"parameters": {
+										"text": "\"(EXP : \"&Card_int.Level&\")\"&\"[size=14]\"&((Card_int.LuckyCard = 1)?\"[color=gold]+Luck\" :\"\")&\"[size=30][opacity=80][color=gold]\"&Card_int.CostForSell*Card_int.Multiplier"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Card_TXT",
+									"sid": 149569025455179,
+									"disabled": true,
+									"parameters": {
+										"text": "\"(EXP : \"&Card_int.Level&\")\"&newline&\"[size=14]\"&Card_int.UIDRANDOM"
+									}
+								}
+							],
+							"sid": 816377331563022
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "Card_int",
+									"sid": 929987511538974
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "Card_TXT",
+									"sid": 619072966213951,
+									"behaviorType": "Pin",
+									"parameters": {
+										"pin-to": "Card_int",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 914199121679045
+						}
+					],
+					"sid": 749711634810839,
+					"background-color": [
+						0.38823529411764707,
+						0.5568627450980392,
+						0.7490196078431373,
+						1
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "Card_int",
+							"sid": 799105104046760,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "เพื่อให้รู้ว่ากำลังลากการ์ดอยู่ ^ ให้เป็น  Frame 0"
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card_int",
+							"sid": 365104925516813,
+							"parameters": {
+								"instance-variable": "Isdraggin",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Card_int",
+							"sid": 226187070588618,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "set-animation-speed",
+							"objectClass": "Card_int",
+							"sid": 445445425568814,
+							"parameters": {
+								"speed": "0"
+							}
+						}
+					],
+					"sid": 779420716011555
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "Card_int",
+							"sid": 330239030530320,
+							"behaviorType": "DragDrop",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "เพื่อให้รู้ว่าไม่ได้กำลังลากการ์ดอยู่ ^ ให้เป็น  Frame 1"
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card_int",
+							"sid": 757916460512366,
+							"parameters": {
+								"instance-variable": "Isdraggin",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-animation-speed",
+							"objectClass": "Card_int",
+							"sid": 108439972705882,
+							"parameters": {
+								"speed": "20"
+							}
+						}
+					],
+					"sid": 497635406259763
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Card_int",
+							"sid": 617857570720818,
+							"parameters": {
+								"animation": "\"In_Animation\""
+							}
+						},
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "Card_int",
+							"sid": 490585058784301,
+							"parameters": {
+								"comparison": 5,
+								"number": "Self.AnimationFrameCount-1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "Animation เปิดการ์ด"
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Card_int",
+							"sid": 999867187534246,
+							"parameters": {
+								"animation": "\"Lvl1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 167498232179612
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 976312478564590
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Card_int",
+							"sid": 916136957959167,
+							"parameters": {
+								"instance-variable": "Isdestroyed"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "ทำให้แน่ใจว่าการ์ดขนาดปกติ"
+						},
+						{
+							"id": "set-width",
+							"objectClass": "Card_int",
+							"sid": 203747250522334,
+							"parameters": {
+								"width": "lerp(Self.Width,Self.ImageWidth,0.2)"
+							}
+						}
+					],
+					"sid": 526957412941858
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Card_int",
+							"sid": 621122523543336,
+							"parameters": {
+								"instance-variable": "Isdestroyed"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Card_int",
+							"sid": 948642536435492,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 552692024767084,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-scale",
+									"objectClass": "Card_int",
+									"sid": 488530323534779,
+									"parameters": {
+										"scale": "lerp(Self.Width/Self.ImageWidth,0,0.2)"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 734387818139278,
+									"parameters": {
+										"seconds": "1.0",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Card_int",
+									"sid": 535389989570657
+								}
+							],
+							"sid": 921917277354073
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Card_int",
+							"sid": 952608681014072,
+							"parameters": {
+								"instance-variable": "Isdestroyed"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Card_int",
+							"sid": 954289671653339,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 964177613958022
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "Card_int",
+							"sid": 313222562291486,
+							"behaviorType": "DragDrop"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-z-elevation",
+							"objectClass": "Card_int",
+							"sid": 387451606002722,
+							"parameters": {
+								"z": "lerp(Self.ZElevation,3,0.1)"
+							}
+						}
+					],
+					"sid": 454094892950965
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "Card_int",
+							"sid": 534791706213932,
+							"behaviorType": "DragDrop",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-z-elevation",
+							"objectClass": "Card_int",
+							"sid": 682412447769084,
+							"parameters": {
+								"z": "lerp(Self.ZElevation,0.1,0.1)"
+							}
+						}
+					],
+					"sid": 328397502732504
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "Card_int",
+							"sid": 970913317038117,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Card_int",
+							"sid": 569953695824402,
+							"parameters": {
+								"object": "CARD_INTE"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CARD_INTE",
+							"sid": 212019814219497,
+							"parameters": {
+								"instance-variable": "Isdestroyed"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "ตอนวางการ์ฺดทับการ์ดอื่น เพื่อให้รู้ว่าการ์ดนั้นๆกำลังโดนทับอยู๋"
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Card_int",
+							"sid": 325692292998959,
+							"parameters": {
+								"instance-variable": "GroupID",
+								"value": "random(-99999,9999999)"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card_int",
+							"sid": 536891013664216,
+							"parameters": {
+								"instance-variable": "MainCardGroup",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "CARD_INTE",
+							"sid": 640395462139132,
+							"parameters": {
+								"instance-variable": "GroupID",
+								"value": "Card_int.GroupID"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "*** ให้ Card ที่เป็นหัวกรุ๊ป ออกจากหัวกรุ๊ปด้วย"
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "CARD_INTE",
+							"sid": 257552503877441,
+							"parameters": {
+								"instance-variable": "MainCardGroup",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 459481862922357,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "repeat",
+									"objectClass": "System",
+									"sid": 579228524498390,
+									"parameters": {
+										"count": "20"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "ให้การ์ดที่โดนทับมาอยู่กับการ์ดที่ทับ"
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 702264783710777,
+									"parameters": {
+										"seconds": "0.01*loopindex",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "CARD_INTE",
+									"sid": 273750918193445,
+									"parameters": {
+										"x": "lerp(CARD_INTE.X,Card_int.X,0.5)",
+										"y": "lerp(CARD_INTE.Y,Card_int.Y-36,0.5)"
+									}
+								}
+							],
+							"sid": 939296822879420
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-drop",
+							"objectClass": "Card_int",
+							"sid": 113348454574092,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Card_int",
+							"sid": 816833130788610,
+							"parameters": {
+								"object": "CARD_INTE"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "เพื่อให้รู้ว่าลากการ์ดออกมาจากกลุ่ม"
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Card_int",
+							"sid": 612518535410293,
+							"parameters": {
+								"instance-variable": "GroupID",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card_int",
+							"sid": 564369767836767,
+							"parameters": {
+								"instance-variable": "MainCardGroup",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 624671720233386
+				},
+				{
+					"eventType": "comment",
+					"text": "EFFECT เพื่อตอน แสดงความยินดี"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Effect_Congrats2",
+							"sid": 972814511806956
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Effect_Congrats2",
+							"sid": 143837686876632,
+							"parameters": {
+								"frame-number": "int(random(0,4))"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Effect_Congrats2",
+							"sid": 613444983289220,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"speed": "choose(-1,1)*random(50,200)"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "Effect_Congrats2",
+							"sid": 321927385209166,
+							"parameters": {
+								"scale": "0.1"
+							}
+						}
+					],
+					"sid": 508676823832098
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 674216409039090
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Effect_Congrats2",
+							"sid": 399033596310011,
+							"parameters": {
+								"scale": "lerp(Self.Width/Self.ImageWidth,1,0.2)"
+							}
+						}
+					],
+					"sid": 717595571251705
+				}
+			],
+			"sid": 538861228712502
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Card_sell",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Card_int",
+							"sid": 665812466802593,
+							"parameters": {
+								"instance-variable": "Isdestroyed"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 904826849634925,
+							"parameters": {
+								"object": "Card_int"
+							}
+						},
+						{
+							"id": "is-dragging",
+							"objectClass": "Card_int",
+							"sid": 554403708514899,
+							"behaviorType": "DragDrop",
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Card_int",
+							"sid": 944881822952082,
+							"parameters": {
+								"object": "Card_Sells"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 191003771408326,
+							"parameters": {
+								"variable": "Coins",
+								"value": "Card_int.CostForSell*Card_int.Multiplier"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card_int",
+							"sid": 312816189034973,
+							"parameters": {
+								"instance-variable": "Isdestroyed",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 961767472819944,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 863076717843050,
+									"parameters": {
+										"seconds": "random(0.1,0.3)",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 677223025861688,
+									"parameters": {
+										"audio-file": "CoinSFX",
+										"loop": "not-looping",
+										"volume": "-5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 259411651253950
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 261052559767903,
+									"parameters": {
+										"seconds": "random(0.1,0.2)",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Card_Sells",
+									"sid": 366691235626518,
+									"parameters": {
+										"object": "TreeEXPPlusTXT",
+										"layer": "\"Game\"",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "TreeEXPPlusTXT",
+									"sid": 243130250025043,
+									"parameters": {
+										"text": "\"[outline=Black][linethickness=2][size=22] \"&\" [size=34]+[size=22]\"&Card_int.CostForSell*Card_int.Multiplier"
+									}
+								}
+							],
+							"sid": 200150072230366
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Card_int",
+							"sid": 718031151008620,
+							"parameters": {
+								"instance-variable": "Isdestroyed"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 958218786865007,
+							"parameters": {
+								"object": "Card_int"
+							}
+						},
+						{
+							"id": "is-dragging",
+							"objectClass": "Card_int",
+							"sid": 808020520764541,
+							"behaviorType": "DragDrop",
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Card_int",
+							"sid": 567098211049057,
+							"parameters": {
+								"object": "Card_LevelUP"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 320215043907738,
+							"parameters": {
+								"variable": "EXP_trees",
+								"value": "Card_int.CostForSell*Card_int.Multiplier"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card_int",
+							"sid": 927307396656394,
+							"parameters": {
+								"instance-variable": "Isdestroyed",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Card_TXT",
+							"sid": 891081552343704,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 172962236011184,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 849022448804803
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 345585658865051,
+									"parameters": {
+										"audio-file": "Reward",
+										"loop": "not-looping",
+										"volume": "-5",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 707632277828820
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 754166786843104,
+									"parameters": {
+										"seconds": "random(0.1,0.2)",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Card_LevelUP",
+									"sid": 132946432873643,
+									"parameters": {
+										"object": "TreeEXPPlusTXT",
+										"layer": "\"Game\"",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "TreeEXPPlusTXT",
+									"sid": 114456461101751,
+									"parameters": {
+										"text": "\"[outline=Black][linethickness=2][size=22] \"&\" [size=34]+[size=22]\"&Card_int.CostForSell*Card_int.Multiplier"
+									}
+								}
+							],
+							"sid": 580852185405718
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 297971378041349
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "TreeEXPPlusTXT",
+							"sid": 906586070266599,
+							"parameters": {
+								"y": "Self.Y -2"
+							}
+						}
+					],
+					"sid": 926951804517317
+				}
+			],
+			"sid": 946829433972381
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Card _ Upgrade & LevelUp & Special Type",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Card_Upgrade",
+							"sid": 570366970278948,
+							"parameters": {
+								"object": "CARD_INTE"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "เพื่อเช็คว่าการ์ดอยู่บน แท่นอัพรึปล่าว ถ้าอยู่ให้โชว์"
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card_Upgrade",
+							"sid": 951399633118339,
+							"parameters": {
+								"instance-variable": "ShowButton",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 882154993627657,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "แสดง Bills !!!! ****************",
+									"text-color": [
+										1,
+										1,
+										1,
+										1
+									],
+									"background-color": [
+										0.8901960784313725,
+										0.23137254901960785,
+										0.32941176470588235,
+										1
+									]
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Upgrade_TXT",
+									"sid": 409178075045631,
+									"parameters": {
+										"text": "\"[size=28]Bills :[size=24][color=white] \"& 20*Card_Upgrade.CardInt_OnUpgradeCount&\"$\"\r\n"
+									}
+								}
+							],
+							"sid": 896286730863994
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CARD_INTE",
+							"sid": 314372184546217,
+							"parameters": {
+								"instance-variable": "IsOnUpgrade"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CARD_INTE",
+							"sid": 816323744881586,
+							"parameters": {
+								"instance-variable": "Isdraggin"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "เพื่อเช็คว่าการ์ดอยู่บน แท่นอัพรึปล่าว ถ้าอยู่ให้ไปอยู่บนแท่น"
+						},
+						{
+							"id": "set-position",
+							"objectClass": "CARD_INTE",
+							"sid": 276901786557061,
+							"parameters": {
+								"x": "lerp(Self.X,Card_Upgrade.X,0.1)",
+								"y": "lerp(Self.Y,Card_Upgrade.Y,0.1)"
+							}
+						}
+					],
+					"sid": 886007720278600
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-dragging",
+							"objectClass": "Card_int",
+							"sid": 664861143157662,
+							"behaviorType": "DragDrop"
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Card_int",
+							"sid": 546166298503110,
+							"parameters": {
+								"instance-variable": "IsOnUpgrade"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CARD_INTE",
+							"sid": 592564706642337,
+							"parameters": {
+								"instance-variable": "MainCardGroup"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CARD_INTE",
+							"sid": 549070786495713,
+							"parameters": {
+								"instance-variable": "IsOnUpgrade"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CARD_INTE",
+							"sid": 830990467890908,
+							"parameters": {
+								"instance-variable": "Isdraggin"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "เพื่อ ตอนที่การ์ดเรากำลังดึงออก เราต้องการให้การ์ดที่กำลังอยู่บนแท่นออกมาทีเดียว"
+						},
+						{
+							"id": "set-position",
+							"objectClass": "CARD_INTE",
+							"sid": 962112352385049,
+							"parameters": {
+								"x": "lerp(Self.X,Card_int.X,0.1)",
+								"y": "lerp(Self.Y,Card_int.Y-36,0.1)"
+							}
+						}
+					],
+					"sid": 319581066811620
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Card_Upgrade",
+							"sid": 323664944310571,
+							"parameters": {
+								"object": "CARD_INTE"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Card_Upgrade",
+							"sid": 760149544745470,
+							"parameters": {
+								"instance-variable": "ShowButton",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 352782464386161
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CARD_INTE",
+							"sid": 692182031515314,
+							"parameters": {
+								"instance-variable": "IsOnUpgrade"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CARD_INTE",
+							"sid": 304637539320951,
+							"parameters": {
+								"instance-variable": "Isdraggin"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "CARD_INTE",
+							"sid": 588539536835386,
+							"parameters": {
+								"object": "Card_Upgrade"
+							}
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 281629891540989,
+							"parameters": {
+								"object": "CARD_INTE"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "เพื่อเช็คว่ามีการ์ดอยู่บนแท่นนั้นกี่ใบ"
+						}
+					],
+					"sid": 798945059041728,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 675584441339243
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Card_Upgrade",
+									"sid": 915270819810093,
+									"parameters": {
+										"instance-variable": "CardInt_OnUpgradeCount",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "CARD_INTE",
+									"sid": 683504408265888,
+									"parameters": {
+										"instance-variable": "IsOnUpgrade",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 323801476860833
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CARD_INTE",
+							"sid": 956597697312875,
+							"parameters": {
+								"instance-variable": "IsOnUpgrade"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "CARD_INTE",
+							"sid": 970675679614400,
+							"parameters": {
+								"instance-variable": "Isdraggin"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "CARD_INTE",
+							"sid": 350494454942357,
+							"parameters": {
+								"object": "Card_Upgrade"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 864023461864987,
+							"parameters": {
+								"object": "CARD_INTE"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "เพื่อเช็คตอนเอาการ์ดออก ให้ลบจำนวนออก"
+						}
+					],
+					"sid": 959020751214920,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 268377644394679
+								}
+							],
+							"actions": [
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "Card_Upgrade",
+									"sid": 405739362833350,
+									"parameters": {
+										"instance-variable": "CardInt_OnUpgradeCount",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "CARD_INTE",
+									"sid": 699653635340295,
+									"parameters": {
+										"instance-variable": "IsOnUpgrade",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 622498100315965
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Card_Upgrade",
+							"sid": 558131268188500,
+							"parameters": {
+								"instance-variable": "ShowButton"
+							}
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "แสดง/ไม่แสดง ปุ่มอัพ"
+						},
+						{
+							"id": "set-y",
+							"objectClass": "UpgradeButton",
+							"sid": 432426152148184,
+							"parameters": {
+								"y": "lerp(Self.Y, 928,0.2)"
+							}
+						}
+					],
+					"sid": 435871485262481
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 576681801910102
+						}
+					],
+					"actions": [
+						{
+							"id": "set-y",
+							"objectClass": "UpgradeButton",
+							"sid": 974495635382415,
+							"parameters": {
+								"y": "lerp(Self.Y,2000,0.1)"
+							}
+						}
+					],
+					"sid": 629038571366024
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 262485622539405,
+							"parameters": {
+								"object": "UpgradeButton"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 976096031077173,
+							"parameters": {
+								"variable": "Coins",
+								"comparison": 5,
+								"value": "20*Card_Upgrade.CardInt_OnUpgradeCount"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 696918350515791,
+							"parameters": {
+								"variable": "Coins",
+								"value": "20*Card_Upgrade.CardInt_OnUpgradeCount"
+							}
+						},
+						{
+							"callFunction": "CameraShake",
+							"sid": 749024305172270
+						},
+						{
+							"callFunction": "UpgradeLoots",
+							"sid": 580723738356994,
+							"parameters": [
+								"\"\"",
+								"0",
+								"0"
+							]
+						},
+						{
+							"id": "impact-vibrate",
+							"objectClass": "TapticEngineVibration",
+							"sid": 422146034250998,
+							"parameters": {
+								"impact-style": "\"medium\"\n"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 676951632358112,
+							"parameters": {
+								"audio-file": "UpgradeButton",
+								"loop": "not-looping",
+								"volume": "-2",
+								"stereo-pan": "0",
+								"tag-optional": "\"Button\""
+							}
+						},
+						{
+							"id": "set-playback-rate",
+							"objectClass": "Audio",
+							"sid": 774719651247219,
+							"parameters": {
+								"tag": "\"Button\"",
+								"playback-rate": "random(0.9,1.2)"
+							}
+						}
+					],
+					"sid": 655546401301507
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 508935918848730,
+							"parameters": {
+								"object": "UpgradeButton"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 432047691376328,
+							"parameters": {
+								"variable": "Coins",
+								"comparison": 2,
+								"value": "20*Card_Upgrade.CardInt_OnUpgradeCount"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "CameraShake",
+							"sid": 740693981764960
+						}
+					],
+					"sid": 453706409131757
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-hold-over-object",
+							"objectClass": "Touch",
+							"sid": 654928368584573,
+							"parameters": {
+								"object": "Card_int"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Card_int",
+							"sid": 590658772436578,
+							"parameters": {
+								"object": "CARD_INTE"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "LevelUpCard",
+							"sid": 577840164935670,
+							"parameters": [
+								"\"\"",
+								"0",
+								"0"
+							]
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 936444834174880,
+							"parameters": {
+								"variable": "UIDRandom_Card",
+								"value": "Card_int.UIDRANDOM"
+							}
+						},
+						{
+							"callFunction": "CameraShake",
+							"sid": 654394463935598
+						},
+						{
+							"id": "impact-vibrate",
+							"objectClass": "TapticEngineVibration",
+							"sid": 984869393043843,
+							"parameters": {
+								"impact-style": "\"medium\"\n"
+							}
+						}
+					],
+					"sid": 651090444389114
+				},
+				{
+					"functionName": "UpgradeLoots",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "LootName",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 181044911178675
+						},
+						{
+							"name": "Weight",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 219074412040718
+						},
+						{
+							"name": "DropAmount",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 356297828422751
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "UpgradeButton",
+							"sid": 968412187848852,
+							"parameters": {
+								"x": "384"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "UpgradeButton",
+							"sid": 564562613745796,
+							"parameters": {
+								"x": "Self.X-10"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 926230246860602,
+							"parameters": {
+								"seconds": "0.01",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "UpgradeButton",
+							"sid": 212293478488506,
+							"parameters": {
+								"x": "Self.X-5"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 178650237413811,
+							"parameters": {
+								"seconds": "0.01",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "UpgradeButton",
+							"sid": 522754669129673,
+							"parameters": {
+								"x": "Self.X+10"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 133154994844327,
+							"parameters": {
+								"seconds": "0.01",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "UpgradeButton",
+							"sid": 852875706727437,
+							"parameters": {
+								"x": "Self.X+10"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 655193191348942,
+							"parameters": {
+								"seconds": "0.01",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "UpgradeButton",
+							"sid": 929292944959325,
+							"parameters": {
+								"x": "Self.X-5"
+							}
+						}
+					],
+					"sid": 181315598043603,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 481025840532871,
+									"parameters": {
+										"variable": "CurUpgrade",
+										"value": "UpgradeSuccess.WeightedByName(\"Upgrade\")"
+									}
+								}
+							],
+							"sid": 712921093532397,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 308779106954562,
+											"parameters": {
+												"variable": "CurUpgrade",
+												"comparison": 0,
+												"value": "\"Wind\""
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "CARD_INTE",
+											"sid": 189329932969660,
+											"parameters": {
+												"instance-variable": "IsOnUpgrade"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CARD_INTE",
+											"sid": 445702844200549,
+											"parameters": {
+												"instance-variable": "WindBuff",
+												"value": "2"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "CARD_INTE",
+											"sid": 745589373238645,
+											"parameters": {
+												"object": "Effect_Star",
+												"layer": "\"Effect\"",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 315527004623702,
+											"parameters": {
+												"audio-file": "LevelUpCard",
+												"loop": "not-looping",
+												"volume": "-8",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 978859515695894
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 374839985552186,
+											"parameters": {
+												"variable": "CurUpgrade",
+												"comparison": 0,
+												"value": "\"Rain\""
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "CARD_INTE",
+											"sid": 536396896540293,
+											"parameters": {
+												"instance-variable": "IsOnUpgrade"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "CARD_INTE",
+											"sid": 753186477141984,
+											"parameters": {
+												"instance-variable": "RainBuff",
+												"value": "2"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "CARD_INTE",
+											"sid": 667651790058554,
+											"parameters": {
+												"object": "Effect_Star",
+												"layer": "\"Effect\"",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 827056592376621,
+											"parameters": {
+												"audio-file": "LevelUpCard",
+												"loop": "not-looping",
+												"volume": "-8",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 427555712601779
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 891240097496240,
+											"parameters": {
+												"variable": "CurUpgrade",
+												"comparison": 0,
+												"value": "\"None\""
+											}
+										},
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "CARD_INTE",
+											"sid": 121942820617322,
+											"parameters": {
+												"instance-variable": "IsOnUpgrade"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 171902331230568,
+											"parameters": {
+												"audio-file": "LevelUpBreak",
+												"loop": "not-looping",
+												"volume": "-10",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "UpgradeButton",
+											"sid": 358165936142801,
+											"parameters": {
+												"x": "Self.X-10"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 402373710937431,
+											"parameters": {
+												"seconds": "0.01",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "UpgradeButton",
+											"sid": 422284122706459,
+											"parameters": {
+												"x": "Self.X-5"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 431198345273782,
+											"parameters": {
+												"seconds": "0.01",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "UpgradeButton",
+											"sid": 811681198407655,
+											"parameters": {
+												"x": "Self.X+10"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 381004721146748,
+											"parameters": {
+												"seconds": "0.01",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "UpgradeButton",
+											"sid": 511751644798413,
+											"parameters": {
+												"x": "Self.X+10"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 564050378072782,
+											"parameters": {
+												"seconds": "0.01",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "UpgradeButton",
+											"sid": 660544706017913,
+											"parameters": {
+												"x": "Self.X-5"
+											}
+										}
+									],
+									"sid": 471388254414447
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "LevelUpCard",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "LootName",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"sid": 389203742802786
+						},
+						{
+							"name": "Weight",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 487594377931003
+						},
+						{
+							"name": "DropAmount",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 835688711430398
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 540591677108363,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 704727728996317,
+									"parameters": {
+										"variable": "CurLevelupCard",
+										"value": "UpgradeSuccess.WeightedByName(\"LevelUp\")"
+									}
+								}
+							],
+							"sid": 177305037620529,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 446373473847568,
+											"parameters": {
+												"variable": "CurLevelupCard",
+												"comparison": 0,
+												"value": "\"Success\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 868448158440182,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "Card_int",
+													"sid": 786542393554449,
+													"parameters": {
+														"instance-variable": "MainCardGroup"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "CARD_INTE",
+													"sid": 626600193675573,
+													"parameters": {
+														"instance-variable": "MainCardGroup"
+													},
+													"isInverted": true
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "CARD_INTE",
+													"sid": 393166368976173,
+													"parameters": {
+														"object": "Card_int"
+													}
+												},
+												{
+													"id": "for-each",
+													"objectClass": "System",
+													"sid": 463462728673034,
+													"parameters": {
+														"object": "CARD_INTE"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "CARD_INTE",
+													"sid": 950762332959738
+												},
+												{
+													"id": "add-to-instvar",
+													"objectClass": "Card_int",
+													"sid": 331625688739351,
+													"parameters": {
+														"instance-variable": "Level",
+														"value": "CARD_INTE.Level"
+													}
+												}
+											],
+											"sid": 141546055836665
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 954792534619832
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 314896409711514,
+													"parameters": {
+														"audio-file": "LevelUpCard",
+														"loop": "not-looping",
+														"volume": "-5",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 540821290938130
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 644977440746538,
+											"parameters": {
+												"variable": "CurLevelupCard",
+												"comparison": 0,
+												"value": "\"None\""
+											}
+										}
+									],
+									"actions": [],
+									"sid": 963996702581484,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "Card_int",
+													"sid": 233472349933234,
+													"parameters": {
+														"instance-variable": "MainCardGroup"
+													}
+												},
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "CARD_INTE",
+													"sid": 259281490179478,
+													"parameters": {
+														"instance-variable": "MainCardGroup"
+													},
+													"isInverted": true
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "CARD_INTE",
+													"sid": 531985521666579,
+													"parameters": {
+														"object": "Card_int"
+													}
+												},
+												{
+													"id": "for-each",
+													"objectClass": "System",
+													"sid": 492633919844085,
+													"parameters": {
+														"object": "CARD_INTE"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "destroy",
+													"objectClass": "CARD_INTE",
+													"sid": 531786875240015
+												}
+											],
+											"sid": 154378276574518
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "trigger-once-while-true",
+													"objectClass": "System",
+													"sid": 779190703071389
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 510250224434890,
+													"parameters": {
+														"audio-file": "LevelUpBreak",
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												}
+											],
+											"sid": 828025875898079
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 318168376021391
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Card_effects",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "Card_int",
+							"sid": 326098008567202,
+							"parameters": {
+								"animation": "\"In_Animation\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": "ไว้แสดงระดับการ์ด ถ้าต่ำกว่า6 ให้แสดงปกติ ถ้ามากกว่าให้เป็น 6 "
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Card_int",
+							"sid": 461648074300413,
+							"parameters": {
+								"animation": "\"Lvl\"&((Self.Level <7)? Self.Level : 6)",
+								"from": "current-frame"
+							}
+						}
+					],
+					"sid": 962942953858546,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-dragging",
+									"objectClass": "Card_int",
+									"sid": 596312528993282,
+									"behaviorType": "DragDrop"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-speed",
+									"objectClass": "Card_int",
+									"sid": 289980961228991,
+									"parameters": {
+										"speed": "0"
+									}
+								}
+							],
+							"sid": 451967317479663
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-dragging",
+									"objectClass": "Card_int",
+									"sid": 473147332798933,
+									"behaviorType": "DragDrop",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-speed",
+									"objectClass": "Card_int",
+									"sid": 767996126690231,
+									"parameters": {
+										"speed": "20"
+									}
+								}
+							],
+							"sid": 988575484632356
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 998395325764811,
+							"parameters": {
+								"interval-seconds": "0.5"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 786051460277134,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CARD_INTE",
+									"sid": 784903084178908,
+									"parameters": {
+										"instance-variable": "RainBuff",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "แสดงบัฟฝน"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "CARD_INTE",
+									"sid": 763722309768245,
+									"parameters": {
+										"object": "Effect_Rain_",
+										"layer": "\"Effect\"",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "Effect_Rain_",
+									"sid": 249275507732452,
+									"parameters": {
+										"angle": "270"
+									}
+								}
+							],
+							"sid": 439630330442063
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "CARD_INTE",
+									"sid": 219949110789901,
+									"parameters": {
+										"instance-variable": "WindBuff",
+										"comparison": 4,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "แสดงบัฟลม"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "CARD_INTE",
+									"sid": 628523806053344,
+									"parameters": {
+										"object": "Effect_Smoke",
+										"layer": "\"Effect\"",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "Effect_Smoke",
+									"sid": 801037846698573,
+									"parameters": {
+										"angle": "270"
+									}
+								}
+							],
+							"sid": 883913336548234
+						}
+					]
+				}
+			],
+			"sid": 658186702275887
+		},
+		{
+			"eventType": "group",
+			"disabled": true,
+			"title": "AFK",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "StartPomodoroOrRestart",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 166128923072540,
+							"parameters": {
+								"variable": "Stdtimer_minutes",
+								"value": "20"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 230601619513017,
+							"parameters": {
+								"variable": "Stdtimer_second",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 467631082681083,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Timer_Button",
+							"sid": 128680830235296,
+							"parameters": {
+								"instance-variable": "IsAFK"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Question_Button",
+							"sid": 626897490298471,
+							"parameters": {
+								"x": "lerp(Self.X,2823,0.1)"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "SpinButton",
+							"sid": 334446263158534,
+							"parameters": {
+								"y": "lerp(Self.Y, 2885,0.1)"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Timer_TXT",
+							"sid": 437679066622526,
+							"parameters": {
+								"y": "lerp(Self.Y, 800,0.1)"
+							}
+						}
+					],
+					"sid": 347295431506027,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 595884564542716,
+									"parameters": {
+										"variable": "Stdtimer_minutes",
+										"comparison": 4,
+										"value": "0"
+									}
+								},
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 564281003735725,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 115438742479106,
+							"disabled": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 647117945878500,
+											"parameters": {
+												"variable": "Stdtimer_second",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 996901596950039,
+											"parameters": {
+												"variable": "Stdtimer_minutes",
+												"value": "1"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 190937944015678,
+											"parameters": {
+												"variable": "Stdtimer_second",
+												"value": "60"
+											}
+										}
+									],
+									"sid": 115076403816041,
+									"disabled": true
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 204827054617851,
+											"parameters": {
+												"variable": "Stdtimer_second",
+												"comparison": 4,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 685379322186401,
+											"parameters": {
+												"variable": "Stdtimer_second",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 518466198219374,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 762819145620826,
+									"parameters": {
+										"variable": "Stdtimer_minutes",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 577130742791939,
+							"disabled": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 830839528634086,
+											"parameters": {
+												"variable": "Stdtimer_second",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "StartPomodoroOrRestart",
+											"sid": 393049054400614
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 988375507830560,
+											"parameters": {
+												"variable": "PomodoroCounted",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 645335501650972,
+									"disabled": true
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 576145718106137,
+											"parameters": {
+												"variable": "Stdtimer_second",
+												"comparison": 4,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 350955435814076,
+											"parameters": {
+												"variable": "Stdtimer_second",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 520187286999336,
+									"disabled": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Timer_Button",
+							"sid": 850375138311798,
+							"parameters": {
+								"instance-variable": "IsAFK"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Question_Button",
+							"sid": 229685167266239,
+							"parameters": {
+								"x": "lerp(Self.X,1823,0.1)"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "SpinButton",
+							"sid": 185409352563286,
+							"parameters": {
+								"y": "lerp(Self.Y, 885,0.1)"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "Timer_TXT",
+							"sid": 229739003561901,
+							"parameters": {
+								"y": "lerp(Self.Y, 2800,0.1)"
+							}
+						}
+					],
+					"sid": 545132018211172,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 861254390264008,
+							"parameters": {
+								"object": "Timer_Button"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-instvar",
+							"objectClass": "Timer_Button",
+							"sid": 279276558215721,
+							"parameters": {
+								"instance-variable": "IsAFK"
+							}
+						},
+						{
+							"callFunction": "StartPomodoroOrRestart",
+							"sid": 745203231838202
+						}
+					],
+					"sid": 610221304882149,
+					"disabled": true
+				}
+			],
+			"sid": 813514141920719
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Setting",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Settting_1_TXT",
+							"sid": 827205203003163,
+							"parameters": {
+								"instance-variable": "On"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "BG_Studylesson2",
+							"sid": 835712606589100,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"Bulge\""
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "BG_Studylesson2",
+							"sid": 353267398688711,
+							"parameters": {
+								"mode": "disable",
+								"effect": "\"WaterBackground\""
+							}
+						}
+					],
+					"sid": 952183803223059
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Settting_1_TXT",
+							"sid": 774601086778378,
+							"parameters": {
+								"instance-variable": "On"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "BG_Studylesson2",
+							"sid": 976194538764929,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"Bulge\""
+							}
+						},
+						{
+							"id": "set-effect-enabled",
+							"objectClass": "BG_Studylesson2",
+							"sid": 981264745546782,
+							"parameters": {
+								"mode": "enable",
+								"effect": "\"WaterBackground\""
+							}
+						}
+					],
+					"sid": 442859031138832
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Settting_2_TXT2",
+							"sid": 682072421713000,
+							"parameters": {
+								"instance-variable": "On"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 329525800130301
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Settting_2_TXT2",
+							"sid": 722452722755087,
+							"parameters": {
+								"instance-variable": "On"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 729128226736498
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Settting_3_TXT",
+							"sid": 662884514072568,
+							"parameters": {
+								"instance-variable": "On"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 391637090983942
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Settting_3_TXT",
+							"sid": 519518796716684,
+							"parameters": {
+								"instance-variable": "On"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 530879242457371
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Touch",
+							"sid": 783028166126208,
+							"parameters": {
+								"object": "ButtonSetting"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-instvar",
+							"objectClass": "ButtonSetting",
+							"sid": 390912411756581,
+							"parameters": {
+								"instance-variable": "Show"
+							}
+						}
+					],
+					"sid": 708516775475003
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "ButtonSetting",
+							"sid": 896133539068284,
+							"parameters": {
+								"instance-variable": "Show"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 255119862886127,
+							"parameters": {
+								"layer": "\"setting\"",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 734983260098296,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 882117019986710,
+									"parameters": {
+										"object": "Settting_1_TXT"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "toggle-boolean-instvar",
+									"objectClass": "Settting_1_TXT",
+									"sid": 332264381606188,
+									"parameters": {
+										"instance-variable": "On"
+									}
+								}
+							],
+							"sid": 763804765985327
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 913526305333056,
+									"parameters": {
+										"object": "Settting_2_TXT2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "toggle-boolean-instvar",
+									"objectClass": "Settting_2_TXT2",
+									"sid": 917658401696844,
+									"parameters": {
+										"instance-variable": "On"
+									}
+								}
+							],
+							"sid": 897708407947029
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-tap-object",
+									"objectClass": "Touch",
+									"sid": 607590579456019,
+									"parameters": {
+										"object": "Settting_3_TXT"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "toggle-boolean-instvar",
+									"objectClass": "Settting_3_TXT",
+									"sid": 820934778434104,
+									"parameters": {
+										"instance-variable": "On"
+									}
+								}
+							],
+							"sid": 804015285046871
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "ButtonSetting",
+							"sid": 706619023782893,
+							"parameters": {
+								"instance-variable": "Show"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 587985525425732,
+							"parameters": {
+								"layer": "\"setting\"",
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 270031741816560
+				}
+			],
+			"sid": 581150646257417
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 576772523257344,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 335055142374547,
+					"parameters": {
+						"variable": "Coins",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 404636307331205,
+					"parameters": {
+						"time-scale": "100"
+					}
+				}
+			],
+			"sid": 914521429367108,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 420809341197669
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 542773753213408,
+					"parameters": {
+						"time-scale": "1"
+					}
+				}
+			],
+			"sid": 613026886249889,
+			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 611336890937801,
+					"parameters": {
+						"mouse-button": "right",
+						"click-type": "clicked",
+						"object-clicked": "Card_int"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Card_int",
+					"sid": 485270659794753,
+					"parameters": {
+						"instance-variable": "Level",
+						"value": "55555"
+					}
+				}
+			],
+			"sid": 917416318954268
+		},
+		{
+			"functionName": "CameraShake",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 768213752707252,
+					"parameters": {
+						"seconds": "0.02",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "camera",
+					"sid": 370179856563351,
+					"parameters": {
+						"x": "Self.X+10"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 120349593409826,
+					"parameters": {
+						"seconds": "0.02",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "camera",
+					"sid": 774019623086937,
+					"parameters": {
+						"x": "Self.X-20"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 759145782103539,
+					"parameters": {
+						"seconds": "0.02",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "camera",
+					"sid": 704935294959077,
+					"parameters": {
+						"x": "Self.X+5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 384820622796853,
+					"parameters": {
+						"seconds": "0.02",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "camera",
+					"sid": 465163671825636,
+					"parameters": {
+						"x": "Self.X+5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 214522627830344,
+					"parameters": {
+						"seconds": "0.02",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "camera",
+					"sid": 859831899417120,
+					"parameters": {
+						"x": "Self.X-10"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 876770029693496,
+					"parameters": {
+						"seconds": "0.02",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "camera",
+					"sid": 189160092549018,
+					"parameters": {
+						"x": "Self.X+5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 493560235165119,
+					"parameters": {
+						"seconds": "0.02",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "camera",
+					"sid": 252026041187284,
+					"parameters": {
+						"x": "Self.X+5"
+					}
+				}
+			],
+			"sid": 533975022836716
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Localstorage",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 249607209479764,
+							"parameters": {
+								"key": "\"Coins_1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 527636199351241,
+							"parameters": {
+								"key": "\"Coins_1\""
+							}
+						}
+					],
+					"sid": 252946838286447
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 830711065333871,
+							"parameters": {
+								"key": "\"EXP_1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 365157672524657,
+							"parameters": {
+								"key": "\"EXP_1\""
+							}
+						}
+					],
+					"sid": 581153467534743
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 715545322295268,
+							"parameters": {
+								"key": "\"LVL_1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 853148204576147,
+							"parameters": {
+								"key": "\"LVL_1\""
+							}
+						}
+					],
+					"sid": 512469450682100
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 584165332902887,
+							"parameters": {
+								"key": "\"PlayMATCHES\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 403809016218995,
+							"parameters": {
+								"key": "\"PlayMATCHES\""
+							}
+						}
+					],
+					"sid": 191525624134966
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 600300148760587,
+							"parameters": {
+								"key": "\"Playtimes_Hour\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 223649165555562,
+							"parameters": {
+								"key": "\"Playtimes_Hour\""
+							}
+						}
+					],
+					"sid": 388634715136470
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 970752822535643,
+							"parameters": {
+								"key": "\"Playtimes_mins\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 474629607041915,
+							"parameters": {
+								"key": "\"Playtimes_mins\""
+							}
+						}
+					],
+					"sid": 370272498764801
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 329855906824457,
+							"parameters": {
+								"key": "\"Playtimes_sec\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 186858632005771,
+							"parameters": {
+								"key": "\"Playtimes_sec\""
+							}
+						}
+					],
+					"sid": 718280444590857
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 396228189668957,
+							"parameters": {
+								"key": "\"Spin_1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 827227563418269,
+							"parameters": {
+								"key": "\"Spin_1\""
+							}
+						}
+					],
+					"sid": 437217347437040
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-loader-layout-complete",
+							"objectClass": "System",
+							"sid": 262890218714086
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Debug_TXT_Game",
+							"sid": 288162873882263,
+							"parameters": {
+								"text": "\"Getting Item\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 141899671828035,
+							"parameters": {
+								"key": "\"Coins_1\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 719659772224617,
+							"parameters": {
+								"key": "\"EXP_1\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 119396511991765,
+							"parameters": {
+								"key": "\"LVL_1\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 656242415830970,
+							"parameters": {
+								"key": "\"PlayMATCHES\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 127668671945978,
+							"parameters": {
+								"key": "\"Playtimes_Hour\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 868655455648608,
+							"parameters": {
+								"key": "\"Playtimes_mins\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 466898072179555,
+							"parameters": {
+								"key": "\"Playtimes_sec\""
+							}
+						},
+						{
+							"id": "check-item-exists",
+							"objectClass": "LocalStorage",
+							"sid": 599144652541573,
+							"parameters": {
+								"key": "\"Spin_1\""
+							}
+						}
+					],
+					"sid": 202753222716538
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 154283988342353,
+							"parameters": {
+								"key": "\"Coins_1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 873234141961450,
+							"parameters": {
+								"variable": "Coins",
+								"value": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Debug_TXT_Game",
+							"sid": 883649099086913,
+							"parameters": {
+								"text": "\"Set\""
+							}
+						}
+					],
+					"sid": 695320145869428
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 473490748269256,
+							"parameters": {
+								"key": "\"EXP_1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 227064294886342,
+							"parameters": {
+								"variable": "EXP_trees",
+								"value": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Debug_TXT_Game",
+							"sid": 174705035226982,
+							"parameters": {
+								"text": "\"Set\""
+							}
+						}
+					],
+					"sid": 726068223627185
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 533013905498669,
+							"parameters": {
+								"key": "\"LVL_1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 304366252743358,
+							"parameters": {
+								"variable": "Level_trees",
+								"value": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Debug_TXT_Game",
+							"sid": 115346400806222,
+							"parameters": {
+								"text": "\"Set\""
+							}
+						}
+					],
+					"sid": 533749162022415
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 751855346499738,
+							"parameters": {
+								"key": "\"Playtimes_Hour\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 825422598947392,
+							"parameters": {
+								"variable": "PlayTimeHour",
+								"value": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Debug_TXT_Game",
+							"sid": 229581781192427,
+							"parameters": {
+								"text": "\"Set\""
+							}
+						}
+					],
+					"sid": 973549540063278
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 910655468198449,
+							"parameters": {
+								"key": "\"Playtimes_mins\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 968076458055348,
+							"parameters": {
+								"variable": "PlayTimeMinutes",
+								"value": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Debug_TXT_Game",
+							"sid": 864911635704372,
+							"parameters": {
+								"text": "\"Set\""
+							}
+						}
+					],
+					"sid": 158101801116395
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 956013621985655,
+							"parameters": {
+								"key": "\"Playtimes_sec\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 500585026544235,
+							"parameters": {
+								"variable": "PlayTimeSecond",
+								"value": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Debug_TXT_Game",
+							"sid": 245928467702689,
+							"parameters": {
+								"text": "\"Set\""
+							}
+						}
+					],
+					"sid": 452442545741909
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 652176189844855,
+							"parameters": {
+								"key": "\"Spin_1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 818516574128164,
+							"parameters": {
+								"variable": "Stock_Card_Crates",
+								"value": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Debug_TXT_Game",
+							"sid": 217885971759748,
+							"parameters": {
+								"text": "\"Set\""
+							}
+						}
+					],
+					"sid": 183171391216716
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 771303531632453,
+							"parameters": {
+								"key": "\"PlayMATCHES\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 831859228577350,
+							"parameters": {
+								"variable": "PlayMatches",
+								"value": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Debug_TXT_Game",
+							"sid": 179017493784129,
+							"parameters": {
+								"text": "\"Set\""
+							}
+						}
+					],
+					"sid": 320496453789598
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 325026294225907,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 368518136124427,
+							"parameters": {
+								"variable": "PlaytimesSecond_ForLocalStorage",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 477972295172772
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 479567629856430,
+							"parameters": {
+								"variable": "PlaytimesSecond_ForLocalStorage",
+								"comparison": 4,
+								"value": "59"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 993356332440782,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 133573052572140,
+							"parameters": {
+								"key": "\"Coins_1\"",
+								"value": "Coins"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 560494491972360,
+							"parameters": {
+								"key": "\"EXP_1\"",
+								"value": "EXP_trees"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 470905957632404,
+							"parameters": {
+								"key": "\"LVL_1\"",
+								"value": "Level_trees"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 334148539904534,
+							"parameters": {
+								"key": "\"PlayMATCHES\"",
+								"value": "PlayMatches"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 224047293716776,
+							"parameters": {
+								"key": "\"Playtimes_Hour\"",
+								"value": "PlayTimeHour"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 662578409156012,
+							"parameters": {
+								"key": "\"Playtimes_mins\"",
+								"value": "PlayTimeMinutes"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 816178793910396,
+							"parameters": {
+								"key": "\"Playtimes_sec\"",
+								"value": "PlayTimeSecond"
+							}
+						},
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 174960651389953,
+							"parameters": {
+								"key": "\"Spin_1\"",
+								"value": "Stock_Card_Crates"
+							}
+						}
+					],
+					"sid": 680158633693696
+				}
+			],
+			"sid": 416472579625544
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 153148591457931,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "clear-storage",
+					"objectClass": "LocalStorage",
+					"sid": 755067840178884
+				}
+			],
+			"sid": 572093476816465
+		}
+	],
+	"sid": 243456637415494
+}

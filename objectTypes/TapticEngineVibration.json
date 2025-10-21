@@ -1,0 +1,12 @@
+{
+	"name": "TapticEngineVibration",
+	"plugin-id": "PaulPlay_TapticEnginePlugin",
+	"sid": 479919836271013,
+	"singleglobal-inst": {
+		"type": "TapticEngineVibration",
+		"properties": {},
+		"uid": 59,
+		"sid": 937543864875898,
+		"tags": ""
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"name": "Starting",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 467450973562381
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 630850081012060,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 218707739967396,
+					"parameters": {
+						"layout": "MainLayout"
+					}
+				}
+			],
+			"sid": 308103919111188
+		}
+	],
+	"sid": 365904051247575
+}

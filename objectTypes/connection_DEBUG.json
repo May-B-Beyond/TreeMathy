@@ -1,0 +1,10 @@
+{
+	"name": "connection_DEBUG",
+	"plugin-id": "Text",
+	"sid": 408331708773100,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

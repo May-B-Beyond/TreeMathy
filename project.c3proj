@@ -1,0 +1,742 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 44902,
+	"name": "MathMaxxing",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": true,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AdvancedRandom",
+			"name": "Advanced Random",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "List",
+			"name": "List",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Multiplayer",
+			"name": "Multiplayer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "PaulPlay_TapticEnginePlugin",
+			"name": "Taptic Engine Vibration",
+			"author": "PaulPlay",
+			"bundled": true,
+			"version": "1.0.0.5"
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Timeline",
+			"name": "Timeline controller",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persist",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "wrap",
+			"name": "Wrap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "bulge",
+			"name": "Bulge",
+			"author": "Brad Larson",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "difference",
+			"name": "Difference",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "skendpow",
+			"name": "SkendPow",
+			"author": "Somebody / Mikal / skymen",
+			"bundled": true,
+			"version": "1.5.0"
+		},
+		{
+			"type": "effect",
+			"id": "skymen_BetterOutline",
+			"name": "Better Outline",
+			"author": "skymen",
+			"bundled": true,
+			"version": "2.1.0.1"
+		},
+		{
+			"type": "effect",
+			"id": "waterbg",
+			"name": "Water background",
+			"author": "Viktor Korsun",
+			"bundled": false
+		}
+	],
+	"uniqueId": "svxhu4dc06x",
+	"objectTypes": {
+		"items": [
+			"TestOBJ",
+			"Browser",
+			"Touch",
+			"ScrollBar",
+			"ScrollBar2",
+			"Mouse",
+			"LessonButton",
+			"Sprite",
+			"Tile_outline",
+			"SpriteFont",
+			"Text",
+			"LightTexture",
+			"TimelineController",
+			"LessonText",
+			"StudyLessonContinueButton",
+			"ExamLessonContinueButton",
+			"ShowButton",
+			"HomeButton",
+			"BG_Tile1",
+			"BG_Tile2",
+			"Card_PlantPot",
+			"BG_Wall",
+			"Grass_BG",
+			"UI_Coin",
+			"Slot",
+			"Text_Exam_Question",
+			"Question",
+			"AJAX",
+			"Button_Answer1",
+			"Button_Answer2",
+			"Button_Answer3",
+			"Button_Answer4",
+			"Text_Answer_1",
+			"Text_Answer_2",
+			"Text_Answer_3",
+			"Text_Answer_4",
+			"NameArray",
+			"Keyboard",
+			"Text_Stats",
+			"Text_Stats2",
+			"Icon",
+			"ButtonSetting",
+			"Effect_Congrats",
+			"Effect_Congrats2",
+			"Coin_UI",
+			"Card_Player",
+			"BackpackButton",
+			"HUD_Backpack",
+			"HUD_Backpack2",
+			"Button_Backpack_Buy",
+			"Icon_BackPack",
+			"Text_Cost_BackPack",
+			"Text_UI_Coin",
+			"Effect_Star",
+			"Effect_Smoke",
+			"Effect_Smoke2",
+			"BG_Studylesson",
+			"connection_DEBUG",
+			"Multiplayer",
+			"Audio",
+			"BG_Overworld_DefaultBiomes",
+			"connection_DEBUG2",
+			"Effect_Star_Continue",
+			"Hand",
+			"SpawnersHost",
+			"SpawnersPeer",
+			"Effect_Star_Continue2",
+			"StudyLessonContinueText",
+			"List",
+			"Test_",
+			"TextInput",
+			"Keyboard_BG",
+			"Tile_outline2",
+			"GLOBAL_TEXT",
+			"ChatLog",
+			"PeerList",
+			"SendButton",
+			"TEXT_UI",
+			"UI",
+			"DEBUG_Chatserver",
+			"Setting_Font_size",
+			"TXT_Setting_Font_Size",
+			"LocalStorage",
+			"Island",
+			"Tree1",
+			"ShadowTree",
+			"Tree2",
+			"BG_Studylesson2",
+			"Debug_TXT_Game",
+			"Question_Button",
+			"UI_BG",
+			"TreeName_AndTiers_TXT",
+			"bac_cursor_click",
+			"Effect_Leaf2",
+			"DemoEffect_Leaf",
+			"Card_int",
+			"Effect_Crates_Spawn_Card",
+			"DemoEffect_Crates_Spawn_Card2",
+			"SpinButton",
+			"SpinUI",
+			"Card_Sells",
+			"Card_Upgrade",
+			"Timer_Button",
+			"UpgradeButton",
+			"UpgradeSuccess",
+			"Effect_Rain_",
+			"Timer_TXT",
+			"Settting_1_TXT",
+			"Settting_2_TXT2",
+			"Settting_3_TXT",
+			"Setting_line",
+			"TapticEngineVibration",
+			"camera",
+			"Card_TXT",
+			"Upgrade_TXT",
+			"Debug_TXT_Game2",
+			"Card_LevelUP",
+			"Playtimes",
+			"PlayMatches",
+			"TreeLevels",
+			"TreeEXPPlusTXT",
+			"TreeLevels2txt",
+			"Timer_HUD",
+			"AFK_StudyTimer_HUD1",
+			"AFK_StudyTimer_HUD2",
+			"AFK_HUD_2",
+			"Sprite2"
+		],
+		"subfolders": []
+	},
+	"functionsName": "Functions",
+	"autosaveData": null,
+	"containers": [
+		{
+			"members": [
+				"Button_Backpack_Buy",
+				"Icon_BackPack",
+				"Text_Cost_BackPack"
+			]
+		},
+		{
+			"members": [
+				"Card_int",
+				"Card_TXT"
+			]
+		}
+	],
+	"families": {
+		"items": [
+			"Card",
+			"ButtonAnswer",
+			"Button_Myisland",
+			"ButtonAnimatedFrame",
+			"IslandFam",
+			"CARD_INTE"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"StartLayout",
+			"LobbyLayout",
+			"StudyLesson",
+			"Sprite",
+			"ChatServer",
+			"MainLayout",
+			"STARTING"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"StartLayout",
+			"LobbyLayout",
+			"StudyLesson",
+			"MainLayout",
+			"Starting"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "PaperSFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 379836305488957,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "CoinSFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 550922547410439,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "WhipsSFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 336092987423368,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Being hitted.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 425406796292055,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "BubbleSFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 153156385685332,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "LevelUpCard.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 435480920104461,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Reward.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 529403728258129,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "LevelUpBreak.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 611753073783811,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "UpgradeButton.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 885985832599056,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "MusicBegginingGame.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 148515948319526,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "MITR-MEDIUM.woff",
+					"type": "application/font-woff",
+					"sid": 677872805031682,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MITR-LIGHT.woff",
+					"type": "application/font-woff",
+					"sid": 286546690793900,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MITR-REGULAR.woff",
+					"type": "application/font-woff",
+					"sid": 346517123820336,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MITR-SEMIBOLD.woff",
+					"type": "application/font-woff",
+					"sid": 710398284849333,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MITR-BOLD.woff",
+					"type": "application/font-woff",
+					"sid": 830016214080738,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "MITR-EXTRALIGHT.woff",
+					"type": "application/font-woff",
+					"sid": 916713486590363,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 139807148695178,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 594294142391515,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 681290816316354,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 313169999628351,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 607856771662486,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 362424203713113,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 517631221773413,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "Question.json",
+					"type": "application/json",
+					"sid": 596000241259157,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Name.json",
+					"type": "application/json",
+					"sid": 846048187894817,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [
+			"Flowchart 1"
+		],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"autoIncrementVersion": false,
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "progress",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 1920,
+	"viewportHeight": 1080,
+	"firstLayout": "STARTING"
+}

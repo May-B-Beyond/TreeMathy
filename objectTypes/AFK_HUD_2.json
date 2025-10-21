@@ -1,0 +1,23 @@
+{
+	"name": "AFK_HUD_2",
+	"plugin-id": "TiledBg",
+	"sid": 146935179008738,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 320,
+		"height": 84,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 5012925,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

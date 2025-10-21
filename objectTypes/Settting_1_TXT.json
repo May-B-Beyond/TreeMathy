@@ -1,0 +1,24 @@
+{
+	"name": "Settting_1_TXT",
+	"plugin-id": "Text",
+	"sid": 385293535561985,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "On",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 355702943834093
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 170079655055292
+		}
+	],
+	"effectTypes": []
+}

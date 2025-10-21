@@ -1,0 +1,15 @@
+{
+	"name": "UpgradeSuccess",
+	"plugin-id": "AdvancedRandom",
+	"sid": 928789509503932,
+	"singleglobal-inst": {
+		"type": "UpgradeSuccess",
+		"properties": {
+			"seed": "",
+			"seeded-random": false
+		},
+		"uid": 112,
+		"sid": 993734515541568,
+		"tags": ""
+	}
+}

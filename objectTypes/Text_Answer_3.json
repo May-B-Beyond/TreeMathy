@@ -1,0 +1,15 @@
+{
+	"name": "Text_Answer_3",
+	"plugin-id": "Text",
+	"sid": 229163310429487,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "difference",
+			"name": "Difference"
+		}
+	]
+}

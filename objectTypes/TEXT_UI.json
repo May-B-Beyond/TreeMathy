@@ -1,0 +1,10 @@
+{
+	"name": "TEXT_UI",
+	"plugin-id": "Text",
+	"sid": 674921469055590,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

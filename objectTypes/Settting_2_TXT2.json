@@ -1,0 +1,18 @@
+{
+	"name": "Settting_2_TXT2",
+	"plugin-id": "Text",
+	"sid": 232266773177951,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "On",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 221675503727905
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

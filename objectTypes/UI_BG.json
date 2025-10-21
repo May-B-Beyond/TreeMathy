@@ -1,0 +1,48 @@
+{
+	"name": "UI_BG",
+	"plugin-id": "Sprite",
+	"sid": 174522498923180,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "Coin_Delay",
+			"type": "number",
+			"desc": "เมื่อค่าไม่ตรงกับ Coin จะสั่น และ set ค่าเป็น Coin",
+			"show": true,
+			"sid": 637283521706015
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 324,
+						"height": 119,
+						"originX": 0.5030864197530864,
+						"originY": 0.4789915966386555,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7585184,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 611016657436686,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

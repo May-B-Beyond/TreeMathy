@@ -1,0 +1,73 @@
+{
+	"name": "Tree2",
+	"plugin-id": "Sprite",
+	"sid": 599145560530233,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 972981366054260
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 823555575304079
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine2",
+			"sid": 790378009694872
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "skendpow",
+			"name": "SkendPow"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 272,
+						"originX": 0.516,
+						"originY": 0.9044117647058824,
+						"originalSource": "C:\\Users\\Design\\Desktop\\Grass.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2863541,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.16666666666666666,
+								0.75,
+								0.16666666666666666,
+								0.75,
+								0.8333333333333334,
+								0.25,
+								0.8333333333333334
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 365457743555790,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

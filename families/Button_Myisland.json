@@ -1,0 +1,16 @@
+{
+	"name": "Button_Myisland",
+	"plugin-id": "Sprite",
+	"sid": 584747830919733,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"BackpackButton",
+		"ButtonSetting",
+		"Setting_Font_size",
+		"Question_Button",
+		"Timer_Button",
+		"Timer_HUD"
+	]
+}

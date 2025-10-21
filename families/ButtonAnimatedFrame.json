@@ -1,0 +1,12 @@
+{
+	"name": "ButtonAnimatedFrame",
+	"plugin-id": "Sprite",
+	"sid": 254886195191994,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Setting_Font_size",
+		"HomeButton"
+	]
+}

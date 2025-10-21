@@ -1,0 +1,36 @@
+{
+	"name": "SpinUI",
+	"plugin-id": "Text",
+	"sid": 255573448388625,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "Size",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 664557525678096
+		},
+		{
+			"name": "TreeID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 857169411511623
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 542264940112350
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 954051194033486
+		}
+	],
+	"effectTypes": []
+}

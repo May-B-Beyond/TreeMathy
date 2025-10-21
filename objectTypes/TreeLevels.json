@@ -1,0 +1,16 @@
+{
+	"name": "TreeLevels",
+	"plugin-id": "Text",
+	"sid": 657766241863712,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 669968984339901
+		}
+	],
+	"effectTypes": []
+}

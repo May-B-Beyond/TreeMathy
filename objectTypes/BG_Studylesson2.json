@@ -1,0 +1,32 @@
+{
+	"name": "BG_Studylesson2",
+	"plugin-id": "TiledBg",
+	"sid": 107975511016098,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "bulge",
+			"name": "Bulge"
+		},
+		{
+			"effectId": "waterbg",
+			"name": "WaterBackground"
+		}
+	],
+	"image": {
+		"width": 158,
+		"height": 158,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 799379,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

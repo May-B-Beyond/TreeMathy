@@ -1,0 +1,27 @@
+{
+	"name": "StartLayout",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 797580203953439
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 228391813385206,
+					"parameters": {
+						"layout": "LobbyLayout"
+					}
+				}
+			],
+			"sid": 661614381626677
+		}
+	],
+	"sid": 524310074120969
+}

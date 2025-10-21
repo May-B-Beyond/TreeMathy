@@ -1,0 +1,23 @@
+{
+	"name": "BG_Overworld_DefaultBiomes",
+	"plugin-id": "TiledBg",
+	"sid": 174941006708905,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 120,
+		"height": 120,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 4732767,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

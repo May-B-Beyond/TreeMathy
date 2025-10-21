@@ -1,0 +1,21 @@
+{
+	"name": "TreeEXPPlusTXT",
+	"plugin-id": "Text",
+	"sid": 389918158631151,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 156794502604044
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 613494484166176
+		}
+	],
+	"effectTypes": []
+}

@@ -1,0 +1,26 @@
+{
+	"name": "LobbyLayout",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "NumberDebug",
+			"type": "string",
+			"initialValue": "",
+			"comment": "ForQuestionDebug",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 977315388467566
+		},
+		{
+			"eventType": "variable",
+			"name": "Coins",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 927576742327344
+		}
+	],
+	"sid": 130892612790893
+}

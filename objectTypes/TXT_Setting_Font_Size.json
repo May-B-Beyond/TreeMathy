@@ -1,0 +1,21 @@
+{
+	"name": "TXT_Setting_Font_Size",
+	"plugin-id": "Text",
+	"sid": 773881983165750,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 253650251886606
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 909380051585089
+		}
+	],
+	"effectTypes": []
+}

@@ -1,0 +1,76 @@
+{
+	"name": "Button_Backpack_Buy",
+	"plugin-id": "Sprite",
+	"sid": 821584483927294,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "SellItem",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 903661636648242
+		},
+		{
+			"name": "Index",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 603337442275070
+		},
+		{
+			"name": "Cost_Coin",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 519602800072112
+		},
+		{
+			"name": "Discounted",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 243103027096294
+		},
+		{
+			"name": "FirstDiscounted",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 269753153126200
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 256,
+						"height": 160,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1748212,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 180281798624465,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

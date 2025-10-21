@@ -1,0 +1,10 @@
+{
+	"name": "LessonText",
+	"plugin-id": "Text",
+	"sid": 617429149767344,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

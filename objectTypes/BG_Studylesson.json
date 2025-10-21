@@ -1,0 +1,23 @@
+{
+	"name": "BG_Studylesson",
+	"plugin-id": "TiledBg",
+	"sid": 436806325758819,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 158,
+		"height": 158,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 9790384,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

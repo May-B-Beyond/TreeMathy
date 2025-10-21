@@ -1,0 +1,54 @@
+{
+	"name": "Card",
+	"plugin-id": "Sprite",
+	"sid": 379661061884055,
+	"instanceVariables": [
+		{
+			"name": "IsEffecting",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 118757525779930
+		},
+		{
+			"name": "CanPlaceOn",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 178148481047826
+		},
+		{
+			"name": "Progress",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 765718994173705
+		},
+		{
+			"name": "MaxProgress",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 982751470156202
+		},
+		{
+			"name": "IsHuman",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 689261353114000
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 965875666582065
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Card_PlantPot",
+		"Card_Player"
+	]
+}

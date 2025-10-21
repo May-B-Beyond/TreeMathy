@@ -1,0 +1,22 @@
+{
+	"name": "ButtonAnswer",
+	"plugin-id": "Sprite",
+	"sid": 567428312737960,
+	"instanceVariables": [
+		{
+			"name": "ChoiceNumber",
+			"type": "number",
+			"desc": "ตัวเลือกนี้ เป็นตัวเลือกที่เท่าไหร่",
+			"show": true,
+			"sid": 876723297215868
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Button_Answer1",
+		"Button_Answer2",
+		"Button_Answer3",
+		"Button_Answer4"
+	]
+}

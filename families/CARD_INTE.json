@@ -1,0 +1,103 @@
+{
+	"name": "CARD_INTE",
+	"plugin-id": "Sprite",
+	"sid": 669387458829285,
+	"instanceVariables": [
+		{
+			"name": "UIDRANDOM",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 436754504543483
+		},
+		{
+			"name": "Level",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 101295450679612
+		},
+		{
+			"name": "Isdestroyed",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 528308813516475
+		},
+		{
+			"name": "Multiplier",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 635801142446917
+		},
+		{
+			"name": "RainBuff",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 175082820161173
+		},
+		{
+			"name": "WindBuff",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 606013359837665
+		},
+		{
+			"name": "CostForSell",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 908555874328580
+		},
+		{
+			"name": "IsOnUpgrade",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 623426162141509
+		},
+		{
+			"name": "Isdraggin",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 819038110942006
+		},
+		{
+			"name": "GroupID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 645416347422510
+		},
+		{
+			"name": "MainCardGroup",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 471330888004472
+		},
+		{
+			"name": "LuckyCard",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 311539617582180
+		},
+		{
+			"name": "Luckiness",
+			"type": "number",
+			"desc": "if this > 9 ? Lucky : no (0,10)",
+			"show": true,
+			"sid": 267113100598919
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Card_int"
+	]
+}

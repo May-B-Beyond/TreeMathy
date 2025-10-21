@@ -1,0 +1,13 @@
+{
+	"name": "IslandFam",
+	"plugin-id": "Sprite",
+	"sid": 161999904951274,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Tree1",
+		"Tree2",
+		"Island"
+	]
+}

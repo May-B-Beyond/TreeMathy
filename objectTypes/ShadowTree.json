@@ -1,0 +1,51 @@
+{
+	"name": "ShadowTree",
+	"plugin-id": "Sprite",
+	"sid": 287936294622266,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 713375940777774
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 541308950925530
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 286,
+						"height": 110,
+						"originX": 0.486013986013986,
+						"originY": 0.42727272727272725,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9340881,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 912451592520875,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

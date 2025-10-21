@@ -1,0 +1,43 @@
+{
+	"name": "TreeName_AndTiers_TXT",
+	"plugin-id": "Text",
+	"sid": 699837393520925,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "Size",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 596072297403383
+		},
+		{
+			"name": "Tree",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 970095205304967
+		},
+		{
+			"name": "TreeID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 346359223276248
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 582934920435414
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 593651649134919
+		}
+	],
+	"effectTypes": []
+}

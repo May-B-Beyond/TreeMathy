@@ -1,0 +1,40 @@
+{
+	"name": "Icon",
+	"plugin-id": "Sprite",
+	"sid": 992822288995213,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 71,
+						"height": 82,
+						"originX": 0.5211267605633803,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7421559,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": "Coin"
+					}
+				],
+				"sid": 636757025032030,
+				"name": "Icon",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

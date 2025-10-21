@@ -1,0 +1,16 @@
+{
+	"name": "Card_TXT",
+	"plugin-id": "Text",
+	"sid": 775449461749295,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 560167759307678
+		}
+	],
+	"effectTypes": []
+}

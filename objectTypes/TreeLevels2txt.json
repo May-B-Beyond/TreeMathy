@@ -1,0 +1,16 @@
+{
+	"name": "TreeLevels2txt",
+	"plugin-id": "Text",
+	"sid": 338924857155494,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 387011820433486
+		}
+	],
+	"effectTypes": []
+}

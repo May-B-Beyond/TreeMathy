@@ -1,0 +1,16 @@
+{
+	"name": "Text_Cost_BackPack",
+	"plugin-id": "Text",
+	"sid": 945417843967203,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 868659570064776
+		}
+	],
+	"effectTypes": []
+}

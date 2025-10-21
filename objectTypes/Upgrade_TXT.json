@@ -1,0 +1,21 @@
+{
+	"name": "Upgrade_TXT",
+	"plugin-id": "Text",
+	"sid": 298326490450904,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 760176205985899
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persist",
+			"sid": 201912475710061
+		}
+	],
+	"effectTypes": []
+}

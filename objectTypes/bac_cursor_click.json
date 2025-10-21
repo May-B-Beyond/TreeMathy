@@ -1,0 +1,29 @@
+{
+	"name": "bac_cursor_click",
+	"plugin-id": "TiledBg",
+	"sid": 450046264773352,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "beh_tween",
+			"sid": 252810692677711
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 32,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 9702640,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

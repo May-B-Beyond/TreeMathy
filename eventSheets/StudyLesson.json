@@ -1,0 +1,3014 @@
+{
+	"name": "StudyLesson",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "เกี่ยวกับข้อสอบ"
+		},
+		{
+			"eventType": "variable",
+			"name": "MaxTestingNumber",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "ให้ทำสูงสุดกี่ข้อ",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 816003712560441
+		},
+		{
+			"eventType": "variable",
+			"name": "OnNumber",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "ทำข้อที่เท่าไหร่อยู่",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 413563480919140
+		},
+		{
+			"eventType": "variable",
+			"name": "QuestionPickNumber",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "สุ่มรูปแบบข้อ",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 795917086762653
+		},
+		{
+			"eventType": "comment",
+			"text": "เกี่ยวกับข้อสอบ"
+		},
+		{
+			"eventType": "comment",
+			"text": "เกี่ยวกับโจทย์"
+		},
+		{
+			"eventType": "variable",
+			"name": "ValAnswer",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 152142420781809
+		},
+		{
+			"eventType": "variable",
+			"name": "DeviationValue1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "ค่าให้คำตอบผิด #1",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 509813530396282
+		},
+		{
+			"eventType": "variable",
+			"name": "DeviationValue2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "ค่าให้คำตอบผิด #2",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 263268160424349
+		},
+		{
+			"eventType": "variable",
+			"name": "DeviationValue3",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "ค่าให้คำตอบผิด #3",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 848267622263732
+		},
+		{
+			"eventType": "variable",
+			"name": "Answer_or_TheRightChoice",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "คำตอบจะอยู่ที่ปุ่มไหน",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 872783545281470
+		},
+		{
+			"eventType": "comment",
+			"text": "เกี่ยวกับโจทย์"
+		},
+		{
+			"eventType": "comment",
+			"text": "เกี่ยวกับ คะแนน"
+		},
+		{
+			"eventType": "variable",
+			"name": "Reward_Coins",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 477314477002451
+		},
+		{
+			"eventType": "variable",
+			"name": "Reward_Spin",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 689855764176284
+		},
+		{
+			"eventType": "variable",
+			"name": "Streak",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 271882109129628
+		},
+		{
+			"eventType": "variable",
+			"name": "ScorejustForDebugging",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 198642546121786
+		},
+		{
+			"eventType": "variable",
+			"name": "DelayingAnswer",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "ไม่ให้กดตอบเร็วเกิน",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 162231692669436
+		},
+		{
+			"eventType": "variable",
+			"name": "Times",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 491725553599097
+		},
+		{
+			"eventType": "comment",
+			"text": "เกี่ยวกับ คะแนน"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 213427021190949
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "RandomQuestion",
+					"sid": 837838029021249,
+					"parameters": [
+						"0",
+						"0",
+						"0",
+						"0",
+						"0",
+						"0",
+						"0",
+						"0"
+					]
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 694353163080302,
+					"parameters": {
+						"variable": "Streak",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 297952335679851,
+					"parameters": {
+						"variable": "OnNumber",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 867091248144467,
+					"parameters": {
+						"variable": "Reward_Coins",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 217344227213410,
+					"parameters": {
+						"variable": "Reward_Spin",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 156884735347751,
+					"parameters": {
+						"variable": "DelayingAnswer",
+						"value": "0.2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 959204916530695,
+					"parameters": {
+						"variable": "ScorejustForDebugging",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 446200778247090,
+					"parameters": {
+						"variable": "Times",
+						"value": "180"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 883408646226494,
+					"parameters": {
+						"audio-file": "MusicBegginingGame",
+						"loop": "not-looping",
+						"volume": "-8",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-window-size",
+					"objectClass": "Browser",
+					"sid": 181233281150904,
+					"parameters": {
+						"width": "1920",
+						"height": "1080"
+					}
+				}
+			],
+			"sid": 759154140082888,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Touch animation",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap",
+							"objectClass": "Touch",
+							"sid": 438926435292546
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 329525154631164,
+							"parameters": {
+								"object-to-create": "Effect_Star",
+								"layer": "\"Effect\"",
+								"x": "Touch.X",
+								"y": "Touch.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 989937688120034,
+							"parameters": {
+								"object-to-create": "Effect_Smoke",
+								"layer": "\"Effect\"",
+								"x": "Touch.X",
+								"y": "Touch.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 546246266084169
+				}
+			],
+			"sid": 950810423109416
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Settings",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Setting_Font_size",
+							"sid": 744822505525385,
+							"parameters": {
+								"instance-variable": "Level",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Text_Exam_Question",
+							"sid": 342250537558960,
+							"parameters": {
+								"instance-variable": "FontSize",
+								"value": "20"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TXT_Setting_Font_Size",
+							"sid": 385103830102112,
+							"parameters": {
+								"text": "\"[outline=#324a63][linethickness=1.5]Font-size : [outline=#5bb831][color=white]Small\""
+							}
+						}
+					],
+					"sid": 954055942366089
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Setting_Font_size",
+							"sid": 197298902400300,
+							"parameters": {
+								"instance-variable": "Level",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Text_Exam_Question",
+							"sid": 800908829553648,
+							"parameters": {
+								"instance-variable": "FontSize",
+								"value": "28"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TXT_Setting_Font_Size",
+							"sid": 577188354797056,
+							"parameters": {
+								"text": "\"[outline=#324a63][linethickness=1.5]Font-size : [outline=#5bb831][color=white]Normal\""
+							}
+						}
+					],
+					"sid": 604296347885358
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Setting_Font_size",
+							"sid": 154352287325628,
+							"parameters": {
+								"instance-variable": "Level",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Text_Exam_Question",
+							"sid": 539848713372687,
+							"parameters": {
+								"instance-variable": "FontSize",
+								"value": "36"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TXT_Setting_Font_Size",
+							"sid": 909051088933538,
+							"parameters": {
+								"text": "\"[outline=#324a63][linethickness=1.5]Font-size : [outline=#5bb831][color=white]Big\""
+							}
+						}
+					],
+					"sid": 410532958520329
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 523536126489352
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "TXT_Setting_Font_Size",
+							"sid": 823622671820896,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "Setting_Font_size",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "ButtonSetting",
+							"sid": 987862039242389,
+							"parameters": {
+								"instance-variable": "Show",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Setting_Font_size",
+							"sid": 700436526339553,
+							"parameters": {
+								"x": "2305"
+							}
+						}
+					],
+					"sid": 792705190025298
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 674521074410113,
+							"parameters": {
+								"object": "ButtonSetting",
+								"type": "end"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "toggle-boolean-instvar",
+							"objectClass": "ButtonSetting",
+							"sid": 186600939899354,
+							"parameters": {
+								"instance-variable": "Show"
+							}
+						}
+					],
+					"sid": 477186364853556
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "ButtonSetting",
+							"sid": 743087430735871,
+							"parameters": {
+								"instance-variable": "Show"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Setting_Font_size",
+							"sid": 920654634791288,
+							"parameters": {
+								"x": "lerp(Self.X,1632,0.1)"
+							}
+						}
+					],
+					"sid": 977169670283731,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Setting_Font_size",
+									"sid": 845344601298289,
+									"parameters": {
+										"instance-variable": "Level",
+										"comparison": 5,
+										"value": "4"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Setting_Font_size",
+									"sid": 835344133981014,
+									"parameters": {
+										"instance-variable": "Level",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 715809045419729
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 144428484636988,
+									"parameters": {
+										"object": "Setting_Font_size",
+										"type": "end"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Setting_Font_size",
+									"sid": 934796161377684,
+									"parameters": {
+										"instance-variable": "Level",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 493427536060530
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "ButtonSetting",
+							"sid": 987477698886530,
+							"parameters": {
+								"instance-variable": "Show"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 803421911873809,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "Setting_Font_size",
+									"sid": 926593910059245,
+									"parameters": {
+										"x": "lerp(Self.X,2305,0.2)"
+									}
+								}
+							],
+							"sid": 128387622947123
+						}
+					]
+				}
+			],
+			"sid": 596601070107143
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Text Animation\\",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 671762309542787
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Exam_Question",
+							"sid": 907615779339123,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,Self.FontSize,0.1)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_1",
+							"sid": 874293608044773,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,46,0.1)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_2",
+							"sid": 346654195315172,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,46,0.1)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_3",
+							"sid": 911736745486798,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,46,0.1)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_4",
+							"sid": 911829415080315,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,46,0.1)"
+							}
+						}
+					],
+					"sid": 969115894566521
+				}
+			],
+			"sid": 599302276141654
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Button Answer animation",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 201935661519615,
+							"parameters": {
+								"object": "Button_Answer1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Button_Answer1",
+							"sid": 289766590208733,
+							"parameters": {
+								"scale": "lerp(Self.Height/Self.ImageHeight,1.09,0.2)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_1",
+							"sid": 253234149925230,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,38,0.1)"
+							}
+						}
+					],
+					"sid": 659063811438593
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 962748378109745,
+							"parameters": {
+								"object": "Button_Answer1"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Button_Answer1",
+							"sid": 122086564932182,
+							"parameters": {
+								"scale": "lerp(Self.Height/Self.ImageHeight,1,0.1)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_1",
+							"sid": 299747676586095,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,30,0.1)"
+							}
+						}
+					],
+					"sid": 241509840087050
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 306302138755606,
+							"parameters": {
+								"object": "Button_Answer2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Button_Answer2",
+							"sid": 252938183755792,
+							"parameters": {
+								"scale": "lerp(Self.Height/Self.ImageHeight,1.09,0.2)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_2",
+							"sid": 214764911818166,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,38,0.1)"
+							}
+						}
+					],
+					"sid": 784943449324114
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 429308402036013,
+							"parameters": {
+								"object": "Button_Answer2"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Button_Answer2",
+							"sid": 589665469158421,
+							"parameters": {
+								"scale": "lerp(Self.Height/Self.ImageHeight,1,0.1)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_2",
+							"sid": 167884813625931,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,30,0.1)"
+							}
+						}
+					],
+					"sid": 329875214978261
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 179989865590457,
+							"parameters": {
+								"object": "Button_Answer3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Button_Answer3",
+							"sid": 926756604254497,
+							"parameters": {
+								"scale": "lerp(Self.Height/Self.ImageHeight,1.09,0.2)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_3",
+							"sid": 248919558075479,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,38,0.1)"
+							}
+						}
+					],
+					"sid": 797538475102359
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 306799771741322,
+							"parameters": {
+								"object": "Button_Answer3"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Button_Answer3",
+							"sid": 813292224163376,
+							"parameters": {
+								"scale": "lerp(Self.Height/Self.ImageHeight,1,0.1)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_3",
+							"sid": 596275668831379,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,30,0.1)"
+							}
+						}
+					],
+					"sid": 129479573856839
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 683611246309618,
+							"parameters": {
+								"object": "Button_Answer4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Button_Answer4",
+							"sid": 535191663731094,
+							"parameters": {
+								"scale": "lerp(Self.Height/Self.ImageHeight,1.09,0.2)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_4",
+							"sid": 818751735832907,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,38,0.1)"
+							}
+						}
+					],
+					"sid": 656314778123551
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 229592994577229,
+							"parameters": {
+								"object": "Button_Answer4"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Button_Answer4",
+							"sid": 333440362464983,
+							"parameters": {
+								"scale": "lerp(Self.Height/Self.ImageHeight,1,0.1)"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_4",
+							"sid": 178169332838918,
+							"parameters": {
+								"size-pt": "lerp(Self.FaceSize,30,0.1)"
+							}
+						}
+					],
+					"sid": 905376819283570
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 575358578888386,
+							"parameters": {
+								"object": "ButtonAnimatedFrame"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ButtonAnimatedFrame",
+							"sid": 729827002283601,
+							"parameters": {
+								"frame-number": "1"
+							}
+						}
+					],
+					"sid": 935676014975097
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-touching-object",
+							"objectClass": "Touch",
+							"sid": 645634114367549,
+							"parameters": {
+								"object": "ButtonAnimatedFrame"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "ButtonAnimatedFrame",
+							"sid": 742227465860901,
+							"parameters": {
+								"frame-number": "0"
+							}
+						}
+					],
+					"sid": 165817909894103
+				}
+			],
+			"sid": 451938656247410
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Stat Text",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 709354428822432
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_Stats",
+							"sid": 817621097807085,
+							"parameters": {
+								"text": "\"[icon=Coin] \"&Reward_Coins&\"$\"&newline&\"Spins : \"&Reward_Spin&newline& \"Streak : \"&Streak&\"     Score : \"&ScorejustForDebugging"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "เวลา"
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Stats2",
+							"sid": 833304802098348,
+							"parameters": {
+								"text": "\"Times : \"&Times&newline&\"   \"&OnNumber&\"/\"&MaxTestingNumber"
+							}
+						}
+					],
+					"sid": 519364341118760,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "เพื่อให้มันอยู่จุดเดิมเสมอ"
+								},
+								{
+									"id": "set-x",
+									"objectClass": "Text_Exam_Question",
+									"sid": 655604149676828,
+									"parameters": {
+										"x": "lerp(Self.X,128,0.09)"
+									}
+								}
+							],
+							"sid": 193869783602181
+						}
+					]
+				}
+			],
+			"sid": 231652637084954
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Effect",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Effect_Congrats2",
+							"sid": 336014209252013
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Effect_Congrats2",
+							"sid": 552760911913637,
+							"parameters": {
+								"frame-number": "int(random(0,4))"
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Effect_Congrats2",
+							"sid": 567084338922345,
+							"behaviorType": "Rotate",
+							"parameters": {
+								"speed": "choose(-1,1)*random(50,200)"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "Effect_Congrats2",
+							"sid": 405472112725641,
+							"parameters": {
+								"scale": "0.1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 539097297306258,
+							"parameters": {
+								"seconds": "0.45",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "move-to-layer",
+							"objectClass": "Effect_Congrats2",
+							"sid": 986799276464538,
+							"parameters": {
+								"layer": "\"Effect\""
+							}
+						}
+					],
+					"sid": 634094816463197
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 702447934594284
+						}
+					],
+					"actions": [
+						{
+							"id": "set-scale",
+							"objectClass": "Effect_Congrats2",
+							"sid": 579571593800792,
+							"parameters": {
+								"scale": "lerp(Self.Width/Self.ImageWidth,1,0.2)"
+							}
+						}
+					],
+					"sid": 375906752057741
+				}
+			],
+			"sid": 146642868954926
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Rule",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 838200213214492,
+							"parameters": {
+								"object": "HomeButton",
+								"type": "end"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 751768052817163,
+							"parameters": {
+								"audio-file": "BubbleSFX",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"sfx\""
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 539877411127088,
+							"parameters": {
+								"variable": "Coins",
+								"value": "Reward_Coins"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 563156696100144,
+							"parameters": {
+								"variable": "Stock_Card_Crates",
+								"value": "Reward_Spin"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 784386414920044,
+							"parameters": {
+								"variable": "Reward_Coins",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 585092644444511,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 391712105989409,
+							"parameters": {
+								"layout": "MainLayout"
+							}
+						}
+					],
+					"sid": 873131541123532
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 398888442876213,
+							"parameters": {
+								"interval-seconds": "0.1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 815482987036002,
+							"disabled": true,
+							"parameters": {
+								"variable": "Times",
+								"value": "0.1"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 246828865589878,
+							"parameters": {
+								"variable": "DelayingAnswer",
+								"value": "0.1"
+							}
+						}
+					],
+					"sid": 188041933617175
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 719117171556144,
+							"parameters": {
+								"variable": "OnNumber",
+								"comparison": 0,
+								"value": "MaxTestingNumber"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 894485181795577,
+							"parameters": {
+								"variable": "DelayingAnswer",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 882828170876484,
+							"parameters": {
+								"variable": "Times",
+								"value": "0"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 427743450770973,
+							"parameters": {
+								"seconds": "1",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 346689846963552,
+							"parameters": {
+								"layout": "MainLayout"
+							}
+						}
+					],
+					"sid": 833317439450559,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 158261998636109,
+							"parameters": {
+								"variable": "Times",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 901118456683437,
+							"parameters": {
+								"variable": "Times",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 565972955787064,
+							"parameters": {
+								"variable": "DelayingAnswer",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 102560418832835,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 715319321587483
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 553287246106692,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 606517323003805,
+									"parameters": {
+										"layout": "MainLayout"
+									}
+								}
+							],
+							"sid": 682951920355688,
+							"disabled": true
+						}
+					]
+				}
+			],
+			"sid": 192450963592665
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Question And Answering",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 156156450031977,
+							"parameters": {
+								"object": "ButtonAnswer",
+								"type": "end"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 789985089086397,
+							"parameters": {
+								"variable": "DelayingAnswer",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Answered",
+							"sid": 369525241560758,
+							"parameters": [
+								"ButtonAnswer.ChoiceNumber"
+							]
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 129076702075138,
+							"parameters": {
+								"variable": "DelayingAnswer",
+								"value": "0.4"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 380886623224004,
+							"parameters": {
+								"audio-file": "BubbleSFX",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"sfx\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 495398346774770,
+							"parameters": {
+								"object-to-create": "Effect_Smoke",
+								"layer": "\"Effect\"",
+								"x": "Touch.X",
+								"y": "Touch.Y",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 869939016152550
+				},
+				{
+					"functionName": "Answered",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "ChoiceChose",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 136924917248320
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 628484292689837,
+							"parameters": {
+								"variable": "NumberDebug",
+								"value": "ChoiceChose"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 758228135592227,
+							"parameters": {
+								"audio-file": "PaperSFX",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"sfx\""
+							}
+						}
+					],
+					"sid": 410312638875806,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 131214876192483,
+									"parameters": {
+										"variable": "ChoiceChose",
+										"comparison": 0,
+										"value": "Answer_or_TheRightChoice"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "ตอบถูก"
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 626084524252700,
+									"parameters": {
+										"audio-file": "CoinSFX",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"sfx\""
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 444689046825965,
+									"parameters": {
+										"variable": "Reward_Coins",
+										"value": "8"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 551035107757335,
+									"parameters": {
+										"variable": "Reward_Spin",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 955704371877481,
+									"parameters": {
+										"variable": "ScorejustForDebugging",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 857280560258387,
+									"parameters": {
+										"variable": "Streak",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 721983073125794,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "ButtonAnswer",
+											"sid": 796299693997678,
+											"parameters": {
+												"instance-variable": "ChoiceNumber",
+												"comparison": 0,
+												"value": "ChoiceChose"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "ButtonAnswer",
+											"sid": 649310749317037,
+											"parameters": {
+												"object": "Effect_Congrats",
+												"layer": "0",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-angle",
+											"objectClass": "Effect_Congrats",
+											"sid": 948570294591370,
+											"parameters": {
+												"angle": "270"
+											}
+										}
+									],
+									"sid": 277246191377372
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 400872853014379,
+									"parameters": {
+										"variable": "ChoiceChose",
+										"comparison": 1,
+										"value": "Answer_or_TheRightChoice"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "ตอบผิด"
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 352414031976095,
+									"parameters": {
+										"audio-file": "Being hitted",
+										"loop": "not-looping",
+										"volume": "-5",
+										"stereo-pan": "0",
+										"tag-optional": "\"sfx\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 216161893850368,
+									"parameters": {
+										"variable": "Reward_Coins",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 881945259915053,
+									"parameters": {
+										"variable": "Streak",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 518466752424163,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 821958181717039,
+											"parameters": {
+												"variable": "Reward_Coins",
+												"comparison": 3,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "ให้หักเวลา เมื่อไม่มีเหรียญให้หัก"
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 870353800530189,
+											"parameters": {
+												"variable": "Reward_Coins",
+												"value": "0"
+											}
+										},
+										{
+											"id": "subtract-from-eventvar",
+											"objectClass": "System",
+											"sid": 575846425117885,
+											"parameters": {
+												"variable": "Times",
+												"value": "10"
+											}
+										}
+									],
+									"sid": 289732839672308
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_Exam_Question",
+											"sid": 509600330227364,
+											"parameters": {
+												"color": "rgbEx(230,20,20)"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Text_Exam_Question",
+											"sid": 154238943473882,
+											"parameters": {
+												"x": "Self.X-15"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 411300050016713,
+											"parameters": {
+												"seconds": "0.02",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Text_Exam_Question",
+											"sid": 306177741358884,
+											"parameters": {
+												"x": "Self.X-5"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 815557976808457,
+											"parameters": {
+												"seconds": "0.02",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Text_Exam_Question",
+											"sid": 158868345455313,
+											"parameters": {
+												"x": "Self.X+25"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 679678825809728,
+											"parameters": {
+												"seconds": "0.02",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Text_Exam_Question",
+											"sid": 740958778415635,
+											"parameters": {
+												"x": "Self.X+10"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 728100706500416,
+											"parameters": {
+												"seconds": "0.02",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Text_Exam_Question",
+											"sid": 846401066408332,
+											"parameters": {
+												"x": "Self.X-5"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 973591629233820,
+											"parameters": {
+												"seconds": "0.02",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "Text_Exam_Question",
+											"sid": 388147429729688,
+											"parameters": {
+												"x": "Self.X-15"
+											}
+										},
+										{
+											"id": "set-font-color",
+											"objectClass": "Text_Exam_Question",
+											"sid": 402631680418063,
+											"parameters": {
+												"color": "rgbEx(0,0,0)"
+											}
+										}
+									],
+									"sid": 542604959388319
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "เปลี่ยนข้อตอนสุดท้าย  เพราะ เดี๋ยวคำตอบเปลี่ยน"
+								},
+								{
+									"callFunction": "RandomQuestion",
+									"sid": 944180058266934,
+									"parameters": [
+										"0",
+										"0",
+										"0",
+										"0",
+										"0",
+										"0",
+										"0",
+										"0"
+									]
+								}
+							],
+							"sid": 758419649280786
+						}
+					]
+				},
+				{
+					"functionName": "RandomQuestion",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "Number1",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 450761251267019
+						},
+						{
+							"name": "Number2",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 359181597637042
+						},
+						{
+							"name": "Number3",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 834481690448583
+						},
+						{
+							"name": "Number4",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 584961398207394
+						},
+						{
+							"name": "Number5",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 977267106785567
+						},
+						{
+							"name": "Number6",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 292097349485478
+						},
+						{
+							"name": "NameInQuestion_Index",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 435016551273990
+						},
+						{
+							"name": "ValueAnswer",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 119380581343067
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 575692194851598,
+							"parameters": {
+								"variable": "OnNumber",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 318055132103815,
+							"parameters": {
+								"variable": "QuestionPickNumber",
+								"value": "int(random(0,4))"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Exam_Question",
+							"sid": 379317491620653,
+							"parameters": {
+								"size-pt": "28"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 722579657856995,
+							"parameters": {
+								"variable": "DeviationValue1",
+								"value": "choose(1,2,5,4,10,100,5,4)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 294499458083323,
+							"parameters": {
+								"variable": "DeviationValue2",
+								"value": "choose(-5,12,24,20)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 178222750606838,
+							"parameters": {
+								"variable": "DeviationValue3",
+								"value": "choose(-1,-2,6)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 542227321226354,
+							"parameters": {
+								"variable": "Answer_or_TheRightChoice",
+								"value": "int(random(1,5))"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_1",
+							"sid": 405047153655072,
+							"parameters": {
+								"size-pt": "8"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_2",
+							"sid": 801303008417070,
+							"parameters": {
+								"size-pt": "8"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_3",
+							"sid": 625500105822664,
+							"parameters": {
+								"size-pt": "8"
+							}
+						},
+						{
+							"id": "set-font-size",
+							"objectClass": "Text_Answer_4",
+							"sid": 782538013118732,
+							"parameters": {
+								"size-pt": "8"
+							}
+						}
+					],
+					"sid": 893299259189604,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 641679599290694,
+									"parameters": {
+										"variable": "QuestionPickNumber",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "RandomAllTheName"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 912521824566028,
+									"parameters": {
+										"variable": "NameInQuestion_Index",
+										"value": "int(random(0,NameArray.Height))"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "เลือกกี่ตัว"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 439833852994756,
+									"parameters": {
+										"variable": "Number1",
+										"value": "int(random(1,4))"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "เลือกเลข ตัวที่มีทั้งหมด"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 842447011187716,
+									"parameters": {
+										"variable": "Number2",
+										"value": "int(random(5,10))"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "เขียน Text โดยดึงจาก Array[name] , Array[number]"
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Text_Exam_Question",
+									"sid": 850915131341133,
+									"parameters": {
+										"text": "Question.At(0,QuestionPickNumber)&NameArray.At(0,NameInQuestion_Index)&Question.At(1,QuestionPickNumber)&Number1&Question.At(2,QuestionPickNumber)&Number2&Question.At(3,QuestionPickNumber)"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "ให้เซตค่าเพื่อเริ่มคำนวน 1 ครั้ง"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 470079866579564,
+									"parameters": {
+										"variable": "Number3",
+										"value": "Number2"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 194436712823034,
+									"parameters": {
+										"variable": "Number4",
+										"value": "Number1"
+									}
+								}
+							],
+							"sid": 966819211742672,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 945814041975989,
+											"parameters": {
+												"count": "Number1-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "Loop index เริ่มที่ 0"
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 567714581842583,
+											"parameters": {
+												"variable": "Number3",
+												"value": "Number3*(Number2-loopindex-1)"
+											}
+										}
+									],
+									"sid": 594391822262152
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 670154873572356,
+											"parameters": {
+												"count": "Number1-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "Loop index เริ่มที่ 0"
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 253824006103923,
+											"parameters": {
+												"variable": "Number4",
+												"value": "Number4*(Number1-loopindex-1)"
+											}
+										}
+									],
+									"sid": 572192515717546
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "ส่งคำตอบ ไปให้ Global"
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 177450996529615,
+											"parameters": {
+												"seconds": "0.00000001",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 886458925185807,
+											"parameters": {
+												"variable": "ValueAnswer",
+												"value": "Number3/Number4"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 177256085401563,
+											"parameters": {
+												"seconds": "0.00000001",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 676938220520015,
+											"parameters": {
+												"variable": "ValAnswer",
+												"value": "ValueAnswer"
+											}
+										}
+									],
+									"sid": 650301578720580
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 153683251030500,
+									"parameters": {
+										"variable": "QuestionPickNumber",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "RandomAllTheName"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 498993112424376,
+									"parameters": {
+										"variable": "NameInQuestion_Index",
+										"value": "int(random(0,NameArray.Height))"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "วิธีเดินทางบนบก"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 713843810555811,
+									"parameters": {
+										"variable": "Number1",
+										"value": "int(random(10,31))"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "วิธีเดินทางในทะเล"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 729041384283594,
+									"parameters": {
+										"variable": "Number2",
+										"value": "int(random(10,21))"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "เขียน Text โดยดึงจาก Array[name] , Array[number]"
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Text_Exam_Question",
+									"sid": 876388467636900,
+									"parameters": {
+										"text": "Question.At(0,QuestionPickNumber)&NameArray.At(0,NameInQuestion_Index)&Question.At(1,QuestionPickNumber)&Number1&Question.At(2,QuestionPickNumber)&Number2&Question.At(3,QuestionPickNumber)"
+									}
+								}
+							],
+							"sid": 143304138689692,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 926211892294387
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "ให้เซตค่าเพื่อเริ่มคำนวน 1 ครั้ง"
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 277468025669740,
+											"parameters": {
+												"variable": "ValueAnswer",
+												"value": "Number2+Number1"
+											}
+										}
+									],
+									"sid": 982672267404388
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "ส่งคำตอบ ไปให้ Global"
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 201668897392313,
+											"parameters": {
+												"seconds": "0.00000001",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 384616850055184,
+											"parameters": {
+												"variable": "ValAnswer",
+												"value": "ValueAnswer"
+											}
+										}
+									],
+									"sid": 307949045632963
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 855531062046384,
+									"parameters": {
+										"variable": "QuestionPickNumber",
+										"comparison": 0,
+										"value": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "RandomAllTheName"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 565024398192633,
+									"parameters": {
+										"variable": "NameInQuestion_Index",
+										"value": "int(random(0,NameArray.Height))"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "จำนวนเสื้อ"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 962023363408740,
+									"parameters": {
+										"variable": "Number1",
+										"value": "int(random(5,21))"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "จำนวนกางเกง"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 967822411555410,
+									"parameters": {
+										"variable": "Number2",
+										"value": "int(random(5,13))"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "เขียน Text โดยดึงจาก Array[name] , Array[number]"
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Text_Exam_Question",
+									"sid": 964187927065286,
+									"parameters": {
+										"text": "Question.At(0,QuestionPickNumber)&NameArray.At(0,NameInQuestion_Index)&Question.At(1,QuestionPickNumber)&Number1&Question.At(2,QuestionPickNumber)&Number2&Question.At(3,QuestionPickNumber)"
+									}
+								}
+							],
+							"sid": 601350155548808,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 580355936353626
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "ให้เซตค่าเพื่อเริ่มคำนวน 1 ครั้ง"
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 154271674934202,
+											"parameters": {
+												"variable": "ValueAnswer",
+												"value": "Number2*Number1"
+											}
+										}
+									],
+									"sid": 938665198032259
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "ส่งคำตอบ ไปให้ Global"
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 269806464737851,
+											"parameters": {
+												"seconds": "0.00000001",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 344826736845385,
+											"parameters": {
+												"variable": "ValAnswer",
+												"value": "ValueAnswer"
+											}
+										}
+									],
+									"sid": 973947003059200
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 267960406079462,
+									"parameters": {
+										"variable": "QuestionPickNumber",
+										"comparison": 0,
+										"value": "3"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "RandomAllTheName"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 286981380820837,
+									"parameters": {
+										"variable": "NameInQuestion_Index",
+										"value": "int(random(0,NameArray.Height))"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "เลขที่ ถูกหารลงตัวได้"
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 171382379623310,
+									"parameters": {
+										"variable": "Number1",
+										"value": "int(random(2,10))"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 765014994235268,
+									"parameters": {
+										"variable": "Number2",
+										"value": "9"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 116728484494118,
+									"parameters": {
+										"variable": "Number3",
+										"value": "99"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "เขียน Text โดยดึงจาก Array[name] , Array[number]"
+								},
+								{
+									"id": "set-text",
+									"objectClass": "Text_Exam_Question",
+									"sid": 677759570783565,
+									"parameters": {
+										"text": "Question.At(0,QuestionPickNumber)&NameArray.At(0,NameInQuestion_Index)&Question.At(1,QuestionPickNumber)&Number1&Question.At(2,QuestionPickNumber)"
+									}
+								}
+							],
+							"sid": 955822850092072,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 349439329124572
+										}
+									],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "ให้เซตค่าเพื่อเริ่มคำนวน 1 ครั้ง"
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 374238122340514,
+											"parameters": {
+												"variable": "ValueAnswer",
+												"value": "int(Number3/Number1)-int(Number2/Number1)"
+											}
+										}
+									],
+									"sid": 206215805442607
+								},
+								{
+									"eventType": "block",
+									"conditions": [],
+									"actions": [
+										{
+											"type": "comment",
+											"text": "ส่งคำตอบ ไปให้ Global"
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 954553464021852,
+											"parameters": {
+												"seconds": "0.00000001",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 956312577538921,
+											"parameters": {
+												"variable": "ValAnswer",
+												"value": "ValueAnswer"
+											}
+										}
+									],
+									"sid": 158037836147048
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 564811612371737,
+							"parameters": {
+								"variable": "Answer_or_TheRightChoice",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_1",
+							"sid": 327502294861812,
+							"parameters": {
+								"text": "ValAnswer"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_2",
+							"sid": 837437162414608,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_3",
+							"sid": 512300767543953,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_4",
+							"sid": 753400882988946,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue3"
+							}
+						}
+					],
+					"sid": 843879221935887
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 903385403384783,
+							"parameters": {
+								"variable": "Answer_or_TheRightChoice",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_1",
+							"sid": 454104567407934,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_2",
+							"sid": 286054222782113,
+							"parameters": {
+								"text": "ValAnswer"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_3",
+							"sid": 442075405376257,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_4",
+							"sid": 180403197895972,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue3"
+							}
+						}
+					],
+					"sid": 254417674686657
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 927182075634093,
+							"parameters": {
+								"variable": "Answer_or_TheRightChoice",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_1",
+							"sid": 400440266436127,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_2",
+							"sid": 839852137996309,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_3",
+							"sid": 186936091474931,
+							"parameters": {
+								"text": "ValAnswer"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_4",
+							"sid": 552239261127752,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue3"
+							}
+						}
+					],
+					"sid": 723514857686156
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 264165040311373,
+							"parameters": {
+								"variable": "Answer_or_TheRightChoice",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_1",
+							"sid": 725534606556629,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_2",
+							"sid": 363425633978484,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_3",
+							"sid": 987266230052166,
+							"parameters": {
+								"text": "ValAnswer+DeviationValue3"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Text_Answer_4",
+							"sid": 414876527788520,
+							"parameters": {
+								"text": "ValAnswer"
+							}
+						}
+					],
+					"sid": 508296755678590
+				}
+			],
+			"sid": 387715637014851,
+			"background-color": [
+				0.5019607843137255,
+				0.5764705882352941,
+				0.6588235294117647,
+				1
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Request Data from array & Lock screen2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 847806483920151
+						}
+					],
+					"actions": [
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 601275791836139,
+							"parameters": {
+								"tag": "\"Question_Array\"",
+								"file": "Question.json"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 551805904608153,
+							"parameters": {
+								"tag": "\"Name_Array\"",
+								"file": "Name.json"
+							}
+						}
+					],
+					"sid": 640694584709652
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap",
+							"objectClass": "Touch",
+							"sid": 195202979055567
+						}
+					],
+					"actions": [
+						{
+							"id": "request-fullscreen",
+							"objectClass": "Browser",
+							"sid": 566169681895180,
+							"parameters": {
+								"mode": "stretch-letterbox-scale",
+								"navigation-ui": "auto"
+							}
+						}
+					],
+					"sid": 379445010241429
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap",
+							"objectClass": "Touch",
+							"sid": 593860578163113
+						},
+						{
+							"id": "is-fullscreen",
+							"objectClass": "Browser",
+							"sid": 655474547578658
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 667516517331769,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "lock-orientation",
+							"objectClass": "Browser",
+							"sid": 202854834543974,
+							"parameters": {
+								"orientation": "landscape"
+							}
+						}
+					],
+					"sid": 282147082211447,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-loader-layout-complete",
+							"objectClass": "System",
+							"sid": 841264925352382
+						}
+					],
+					"actions": [
+						{
+							"id": "request-fullscreen",
+							"objectClass": "Browser",
+							"sid": 272011337304192,
+							"parameters": {
+								"mode": "stretch-letterbox-scale",
+								"navigation-ui": "auto"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 667835965994363,
+							"parameters": {
+								"tag": "\"Question_Array\"",
+								"file": "Question.json"
+							}
+						},
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 537226018379717,
+							"parameters": {
+								"tag": "\"Name_Array\"",
+								"file": "Name.json"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "ชื่อ TAG => Array"
+						}
+					],
+					"sid": 915029449112884
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 754982552529446,
+							"parameters": {
+								"tag": "\"Question_Array\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "Question",
+							"sid": 435952049016782,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 937836090239825
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 762439069363413,
+							"parameters": {
+								"tag": "\"Name_Array\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "NameArray",
+							"sid": 161420246117060,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						}
+					],
+					"sid": 374303844620885
+				}
+			],
+			"sid": 553111174085003
+		}
+	],
+	"sid": 481159221909231
+}
